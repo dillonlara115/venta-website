@@ -9,7 +9,6 @@ Template Name: Denver Page
 	<div class="container">
 		<div class="hp-headline">Denver, CO</div>
 		<h2 class="hp-headline">we help businesses identify, visualize, and achieve their goals through adaptive digital marketing</h2>
-		<!--<p class="hp-cta"><a href="/">Start Your Project</a></p>-->
 		<div style="clear: both"></div>
 	</div>
 </div>

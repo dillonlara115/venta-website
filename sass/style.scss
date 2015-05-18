@@ -6,6 +6,10 @@ Author: Max Prokell
 Author URI: http://www.maxprokell.com/
 */
 $headerFont: 'Oswald', sans-serif;
+$facebook: #2d4488;
+$twitter: #1a8cd5;
+$google: #de4930;
+
 html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{
 	font:inherit;
 	padding:0;
@@ -49,7 +53,7 @@ article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{
 }
 
 @import 'bourbon/bourbon';
-
+@import 'neat/neat';
 
 // icon font
 @font-face {
@@ -134,9 +138,15 @@ article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{
 	}
 
 }
+
+$small: em(960);
 .main-content {
 	width: 68%;
 	float: left;
+	@include media(max-width $small) {
+		width: 100%;
+		padding: 0 1em;
+	}
 }
 .portfolio.denver-portfolio h2 {
 	color: #669600;
@@ -156,6 +166,7 @@ article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{
 		margin: 0;
 		border: 0;
 		display: inline-block;
+		position: relative;
 		flex-grow: 1;
 		@include align-items(stretch);
 		@include box-sizing(border-box);
@@ -175,8 +186,53 @@ article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{
 	width: 100%;
 	z-index: 1;
 	margin: 0 auto;
-	padding: 0;
+	padding: 1em 0 0;
 }
+
+/* portfolio sections */
+.portfolio-item {
+	margin: 0;
+	border: 0;
+	display: inline-block;
+	position: relative;
+	flex-grow: 1;
+	width: 375px;
+	@include align-items(stretch);
+	@include box-sizing(border-box);
+
+	img {
+		width: 100%;
+	}
+	.portfolio-content {
+		bottom: 200px;
+		overflow: hidden;
+		opacity: 0;
+		position: relative;
+		@include transition(all 250ms ease);
+	}
+	.background {
+		background: rgba(238, 238, 238, 0.48);
+		position: absolute;
+		left: 0;
+		right: 0;
+		top: 0;
+		bottom: 0;
+		width: 100%;
+		height: 100%;
+		opacity: 0;
+		@include transition(all 250ms ease);
+	}
+	&:hover {
+		.background {
+			opacity: 1;
+		}
+		.portfolio-content {
+			bottom: 100px;
+			opacity: 1;
+		}
+	}
+}
+
 
 h1, h2, h3, h4, h5, h6 {
 	font-size: 26px;
@@ -184,6 +240,10 @@ h1, h2, h3, h4, h5, h6 {
 	font-family: $headerFont;
 	font-weight: 400;
 	margin: 0 0 15px;
+}
+
+h3 {
+	font-size: 1.4em;
 }
 
 p {
@@ -197,10 +257,22 @@ strong {
 em {
 	font-style: italic;
 }
+/* denver page */
 .denver-content {
 	max-width: 1000px;
 	margin: 0 auto;
 	padding: 3em 0 0;
+	.main-content {
+		margin-bottom: 3em;
+	}
+}
+
+.certification-image {
+	max-width: 90px;
+	margin: .5em;
+	@include  media(max-width $small) {
+		max-width: 100px;
+	}
 }
 /* =Header
 ----------------------------------------------- */
@@ -223,25 +295,28 @@ img.logo {
 }
 
 //services sections
-.services .container {
-	@include display(flex);
-	@include flex-direction(row);
-	@include align-items(stretch);
-	flex-wrap: wrap;
-	.item {
-		margin: 0;
-		border: 0;
-		text-align: center;
-		width: 175px;
-		padding: 5px;
-		flex-grow: 1;
+.services {
+	margin-top: 3em;
+	.container {
+		@include display(flex);
+		@include flex-direction(row);
 		@include align-items(stretch);
-		@include box-sizing(border-box);
-		i {
-			font-size: 7em;
-			display: block;
-			padding-bottom: 15px;
-			color: #669600;
+		flex-wrap: wrap;
+		.item {
+			margin: 0;
+			border: 0;
+			text-align: center;
+			width: 175px;
+			padding: 5px;
+			flex-grow: 1;
+			@include align-items(stretch);
+			@include box-sizing(border-box);
+			i {
+				font-size: 7em;
+				display: block;
+				padding-bottom: 15px;
+				color: #669600;
+			}
 		}
 	}
 }	
@@ -645,9 +720,11 @@ h1.entry-title {
 // contact widget
 .contact-widget  {
 	width: 300px;
-	padding:0 3em 0 0;
+	padding:0 0 0 3em;
 	float: left;
-	margin-left: 1em;
+	@include media(max-width $small) {
+		width: 100%;
+	}
 	@include box-sizing(border-box);
 	.gform_wrapper {
 		label.gfield_label {
@@ -661,11 +738,15 @@ h1.entry-title {
 			border: 1px solid #669600;
 			padding: .5em!important; 
 			width: 100%!important;
+			@include box-sizing(border-box);
 		}
 		.gform_button {
 			color: #fff;
 			background: #669600;
 			padding: 4px 10px;
+		}
+		.gfield {
+			margin-bottom: 1em;
 		}
 	}
 }
@@ -814,6 +895,32 @@ h1.entry-title {
 	background: #000;
 }
 
+/* social media */
+.social-media {
+	.fa {
+		font-size: 40px;
+		margin: 5px 15px 0 0;
+		@include transition(all 250ms ease);
+	}
+}
+.fa-google-plus-square {
+	color: $google;
+	&:hover {
+		color: lighten($google, 20%);
+	}
+}
+.fa-facebook-official {
+	color: $facebook;
+	&:hover {
+		color: lighten($facebook, 20%);
+	}
+}
+.fa-twitter-square {
+	color: $twitter;
+	&:hover {
+		color: lighten($twitter, 20%);
+	}
+}
 
 
 /* = Responsive Media Queries

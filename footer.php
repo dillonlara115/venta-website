@@ -14,9 +14,12 @@
 		<div id="center">
 			<h4>Lets Chat</h4>
 			<?php gravity_form(1, false, false, false, '', false); ?>
-			<a href="https://plus.google.com/115133894189970364615" rel="publisher" target="_blank"><i class="fa fa-2x fa-google-plus-square"></i></a>
-			<a href="https://www.facebook.com/VentaMarketing573" target="_blank"><i class="fa fa-2x fa-facebook-official"></i></a>
-			<a href="https://twitter.com/venta_marketing" target="_blank"><i class="fa fa-2x fa-twitter-square"></i></a>
+			<div class="social-media">
+				<a href="https://plus.google.com/115133894189970364615" rel="publisher" target="_blank"><i class="fa fa-2x fa-google-plus-square"></i></a>
+				<a href="https://www.facebook.com/VentaMarketing573" target="_blank"><i class="fa fa-2x fa-facebook-official"></i></a>
+				<a href="https://twitter.com/venta_marketing" target="_blank"><i class="fa fa-2x fa-twitter-square"></i></a>
+			</div>
+			
 		</div>
 		<div id="right">
 			<div id="footer-contact">

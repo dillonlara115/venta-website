@@ -7,7 +7,7 @@ Template Name: Home
 <?php get_header(); ?>
 
 <div id="hp-header" class="hp-header">
-	<video autoplay  muted loop poster="http://ventamarketing.com.com/wp-content/uploads/2015/05/video.png">
+	<video autoplay  muted loop poster="http://ventamarketing.com/wp-content/uploads/2015/05/video.png">
 		<source src="<?php bloginfo('template_url'); ?>/video/venta.mp4" type="video/mp4"/>
 		<source src="<?php bloginfo('template_url'); ?>/video/venta.ovg" type="video/ovg"/>
 		<source src="<?php bloginfo('template_url'); ?>/video/venta.webm" type="video/webm"/>
@@ -43,7 +43,7 @@ Template Name: Home
 	<div class="container">
 		<h2><span>Our Services</span></h2>
 		<p>Our organized process and approach to projects allows our team to effectively collaborate with clients to develop the best possible end product that addresses yours goals and achieves maximum success.</p>
-		<!--<p><a href="/">Start Your Project</a></p>-->
+		
 	</div>
 	<div class="step one">
 		<h3>Web Design</h3>
@@ -71,7 +71,7 @@ Template Name: Home
 				<div id="people-text">
 					<h2>Team Venta</h2>
 					<p>Our team is full of digitally-focused creatives. We believe in a job well done and love collaborating with clients to develop strategies that will help grow their business or achieve determined goals. Although we have fun, we are competitive bunch, so once we are on your team, rest assured that we are committed to your business's success.</p>
-					<!--<a href="/">Meet the Team</a>-->
+					
 				</div>	
 				<div id="hp-team">
 					<img src="/wp-content/uploads/2014/08/team-hp-venta.jpg">
