@@ -842,7 +842,7 @@ h1.entry-title {
   .footer #center {
     float: left;
     width: 28%;
-    padding: 20px 1%; }
+    padding: 0 1%; }
     /* line 781, /Users/dillonlara/Sites/venta-marketing/sass/style.scss */
     .footer #center h4 {
       margin: 0; }
@@ -896,24 +896,32 @@ h1.entry-title {
   width: 35%;
   background: url(/wp-content/uploads/2014/08/co-footer-venta.jpg) no-repeat center center; }
 
-/* line 837, /Users/dillonlara/Sites/venta-marketing/sass/style.scss */
+/* line 836, /Users/dillonlara/Sites/venta-marketing/sass/style.scss */
+iframe[name='google_conversion_frame'] {
+  height: 0 !important;
+  width: 0 !important;
+  line-height: 0 !important;
+  font-size: 0 !important;
+  margin-top: -13px;
+  float: left; }
+
+/* line 844, /Users/dillonlara/Sites/venta-marketing/sass/style.scss */
 .footer #footer-contact {
   margin: 100px 40px 0;
-  background: url(/wp-content/uploads/2014/08/bg-footer.png) no-repeat center center;
   background: white;
   background: rgba(255, 255, 255, 0.5);
   width: 200px;
   padding: 20px; }
 
-/* line 846, /Users/dillonlara/Sites/venta-marketing/sass/style.scss */
+/* line 852, /Users/dillonlara/Sites/venta-marketing/sass/style.scss */
 .footer #left #footer-contact {
   float: right; }
 
-/* line 850, /Users/dillonlara/Sites/venta-marketing/sass/style.scss */
+/* line 856, /Users/dillonlara/Sites/venta-marketing/sass/style.scss */
 .footer #right #footer-contact {
   float: left; }
 
-/* line 854, /Users/dillonlara/Sites/venta-marketing/sass/style.scss */
+/* line 860, /Users/dillonlara/Sites/venta-marketing/sass/style.scss */
 #footer-contact h5, #footer-contact p {
   font-size: 16px;
   color: #000;
@@ -923,39 +931,39 @@ h1.entry-title {
   font-family: 'Open Sans', sans-serif;
   font-weight: 700; }
 
-/* line 864, /Users/dillonlara/Sites/venta-marketing/sass/style.scss */
+/* line 870, /Users/dillonlara/Sites/venta-marketing/sass/style.scss */
 #footer-contact p {
   font-size: 14px;
   margin: 0 0 4px;
   font-weight: 400; }
 
-/* line 870, /Users/dillonlara/Sites/venta-marketing/sass/style.scss */
+/* line 876, /Users/dillonlara/Sites/venta-marketing/sass/style.scss */
 .footer-bottom {
   width: 100%;
-  display: block; }
-  /* line 873, /Users/dillonlara/Sites/venta-marketing/sass/style.scss */
+  display: block;
+  background: #000; }
+  /* line 880, /Users/dillonlara/Sites/venta-marketing/sass/style.scss */
   .footer-bottom #second {
     background: #334B00; }
-  /* line 877, /Users/dillonlara/Sites/venta-marketing/sass/style.scss */
+  /* line 884, /Users/dillonlara/Sites/venta-marketing/sass/style.scss */
   .footer-bottom #third {
     background: #4D7000; }
-  /* line 881, /Users/dillonlara/Sites/venta-marketing/sass/style.scss */
+  /* line 888, /Users/dillonlara/Sites/venta-marketing/sass/style.scss */
   .footer-bottom #fourth {
     background: #5A8300; }
-  /* line 885, /Users/dillonlara/Sites/venta-marketing/sass/style.scss */
+  /* line 892, /Users/dillonlara/Sites/venta-marketing/sass/style.scss */
   .footer-bottom #fifth {
     background: #669600; }
 
-/* line 890, /Users/dillonlara/Sites/venta-marketing/sass/style.scss */
+/* line 897, /Users/dillonlara/Sites/venta-marketing/sass/style.scss */
 .footer-bottom #first, .footer-bottom #second, .footer-bottom #third, .footer-bottom #fourth, .footer-bottom #fifth {
   width: 20%;
   height: 10px;
   display: block;
-  float: left;
-  background: #000; }
+  float: left; }
 
 /* social media */
-/* line 900, /Users/dillonlara/Sites/venta-marketing/sass/style.scss */
+/* line 906, /Users/dillonlara/Sites/venta-marketing/sass/style.scss */
 .social-media .fa {
   font-size: 40px;
   margin: 5px 15px 0 0;
@@ -963,112 +971,112 @@ h1.entry-title {
   -moz-transition: all 250ms ease;
   transition: all 250ms ease; }
 
-/* line 906, /Users/dillonlara/Sites/venta-marketing/sass/style.scss */
+/* line 912, /Users/dillonlara/Sites/venta-marketing/sass/style.scss */
 .fa-google-plus-square {
   color: #de4930; }
-  /* line 908, /Users/dillonlara/Sites/venta-marketing/sass/style.scss */
+  /* line 914, /Users/dillonlara/Sites/venta-marketing/sass/style.scss */
   .fa-google-plus-square:hover {
     color: #ec9688; }
 
-/* line 912, /Users/dillonlara/Sites/venta-marketing/sass/style.scss */
+/* line 918, /Users/dillonlara/Sites/venta-marketing/sass/style.scss */
 .fa-facebook-official {
   color: #2d4488; }
-  /* line 914, /Users/dillonlara/Sites/venta-marketing/sass/style.scss */
+  /* line 920, /Users/dillonlara/Sites/venta-marketing/sass/style.scss */
   .fa-facebook-official:hover {
     color: #5471c7; }
 
-/* line 918, /Users/dillonlara/Sites/venta-marketing/sass/style.scss */
+/* line 924, /Users/dillonlara/Sites/venta-marketing/sass/style.scss */
 .fa-twitter-square {
   color: #1a8cd5; }
-  /* line 920, /Users/dillonlara/Sites/venta-marketing/sass/style.scss */
+  /* line 926, /Users/dillonlara/Sites/venta-marketing/sass/style.scss */
   .fa-twitter-square:hover {
     color: #68b9ed; }
 
 /* = Responsive Media Queries
 ----------------------------------------------- */
 @media only screen and (max-width: 980px) {
-  /* line 929, /Users/dillonlara/Sites/venta-marketing/sass/style.scss */
+  /* line 935, /Users/dillonlara/Sites/venta-marketing/sass/style.scss */
   #hp-body-content {
     float: none;
     width: 90%;
     padding: 0;
     margin: 0 5%; }
-  /* line 935, /Users/dillonlara/Sites/venta-marketing/sass/style.scss */
+  /* line 941, /Users/dillonlara/Sites/venta-marketing/sass/style.scss */
   #hp-body-img {
     display: none; } }
 
 @media only screen and (max-width: 900px) {
-  /* line 941, /Users/dillonlara/Sites/venta-marketing/sass/style.scss */
+  /* line 947, /Users/dillonlara/Sites/venta-marketing/sass/style.scss */
   .hp-headline {
     font-size: 40px; } }
 
 @media only screen and (max-width: 768px) {
-  /* line 947, /Users/dillonlara/Sites/venta-marketing/sass/style.scss */
+  /* line 953, /Users/dillonlara/Sites/venta-marketing/sass/style.scss */
   .hp-header {
     padding: 60px 0 40px; }
-  /* line 951, /Users/dillonlara/Sites/venta-marketing/sass/style.scss */
+  /* line 957, /Users/dillonlara/Sites/venta-marketing/sass/style.scss */
   .hp-headline {
     font-size: 36px;
     margin-bottom: 30px; }
-  /* line 956, /Users/dillonlara/Sites/venta-marketing/sass/style.scss */
+  /* line 962, /Users/dillonlara/Sites/venta-marketing/sass/style.scss */
   h2.hp-headline {
     font-size: 22px; }
-  /* line 960, /Users/dillonlara/Sites/venta-marketing/sass/style.scss */
+  /* line 966, /Users/dillonlara/Sites/venta-marketing/sass/style.scss */
   #hp-portfolio #img {
     width: 60%;
     margin: 40px 20%;
     float: none; }
-  /* line 966, /Users/dillonlara/Sites/venta-marketing/sass/style.scss */
+  /* line 972, /Users/dillonlara/Sites/venta-marketing/sass/style.scss */
   #hp-people #people-text {
     float: none;
     width: 90%;
     margin: 20px 5% 10px; }
-  /* line 973, /Users/dillonlara/Sites/venta-marketing/sass/style.scss */
+  /* line 979, /Users/dillonlara/Sites/venta-marketing/sass/style.scss */
   #hp-people #hp-team {
     float: none;
     width: 90%;
     margin: 10px 5%; }
-  /* line 979, /Users/dillonlara/Sites/venta-marketing/sass/style.scss */
+  /* line 985, /Users/dillonlara/Sites/venta-marketing/sass/style.scss */
   .step {
     float: none;
     width: 100%; }
-  /* line 984, /Users/dillonlara/Sites/venta-marketing/sass/style.scss */
+  /* line 990, /Users/dillonlara/Sites/venta-marketing/sass/style.scss */
   .footer #left, .footer #right {
     display: none; }
-  /* line 988, /Users/dillonlara/Sites/venta-marketing/sass/style.scss */
+  /* line 994, /Users/dillonlara/Sites/venta-marketing/sass/style.scss */
   .footer #center {
     float: none;
     width: 90%;
     padding: 20px 0;
     margin: 0 5%; }
-  /* line 995, /Users/dillonlara/Sites/venta-marketing/sass/style.scss */
+  /* line 1001, /Users/dillonlara/Sites/venta-marketing/sass/style.scss */
   .footer #center #center-contact {
     display: block; } }
 
 @media only screen and (max-width: 480px) {
-  /* line 1001, /Users/dillonlara/Sites/venta-marketing/sass/style.scss */
+  /* line 1007, /Users/dillonlara/Sites/venta-marketing/sass/style.scss */
   img.logo {
     height: auto;
     width: 20%; }
-  /* line 1006, /Users/dillonlara/Sites/venta-marketing/sass/style.scss */
+  /* line 1012, /Users/dillonlara/Sites/venta-marketing/sass/style.scss */
   #navigation {
     width: 70%; }
-  /* line 1010, /Users/dillonlara/Sites/venta-marketing/sass/style.scss */
+  /* line 1016, /Users/dillonlara/Sites/venta-marketing/sass/style.scss */
   #navigation ul {
     padding: 0;
     line-height: 60px; }
-  /* line 1015, /Users/dillonlara/Sites/venta-marketing/sass/style.scss */
+  /* line 1021, /Users/dillonlara/Sites/venta-marketing/sass/style.scss */
   .footer .nav-bottom {
     width: 100%;
     float: none; }
-  /* line 1020, /Users/dillonlara/Sites/venta-marketing/sass/style.scss */
+  /* line 1026, /Users/dillonlara/Sites/venta-marketing/sass/style.scss */
   .nav-bottom #bucket {
     width: 90%;
     margin: 10px 5%;
     float: none; } }
 
 @media only screen and (max-width: 320px) {
-  /* line 1028, /Users/dillonlara/Sites/venta-marketing/sass/style.scss */
+  /* line 1034, /Users/dillonlara/Sites/venta-marketing/sass/style.scss */
   #hp-portfolio #img {
     width: 80%;
     margin: 20px 10%; } }

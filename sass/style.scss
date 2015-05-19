@@ -777,7 +777,7 @@ h1.entry-title {
 	#center {
 		float: left;
 		width: 28%;
-		padding: 20px 1%;
+		padding: 0 1%;
 		h4 {
 			margin: 0;
 		}
@@ -833,10 +833,16 @@ h1.entry-title {
 	width: 35%;
 	background: url(/wp-content/uploads/2014/08/co-footer-venta.jpg) no-repeat center center;
 }
-
+iframe[name='google_conversion_frame'] { 
+	  height: 0 !important;
+    width: 0 !important; 
+    line-height: 0 !important; 
+    font-size: 0 !important;
+    margin-top: -13px;
+    float: left;
+}
 .footer #footer-contact {
 	margin: 100px 40px 0;
-	background: url(/wp-content/uploads/2014/08/bg-footer.png) no-repeat center center;
 	background: rgb(255,255,255);
 	background: rgba(255,255,255,.5);
 	width: 200px;
@@ -870,6 +876,7 @@ h1.entry-title {
 .footer-bottom {
 	width: 100%;
 	display: block;
+	background: #000;
 	#second {
 		background: #334B00;
 	}
@@ -892,7 +899,6 @@ h1.entry-title {
 	height: 10px;
 	display: block;
 	float: left;
-	background: #000;
 }
 
 /* social media */
