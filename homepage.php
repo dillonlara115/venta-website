@@ -68,14 +68,9 @@ Template Name: Home
 	<div class="container">
 		<div class="content">
 			<div id="hp-people">
-				<div id="people-text">
-					<h2>Team Venta</h2>
-					<p>Our team is full of digitally-focused creatives. We believe in a job well done and love collaborating with clients to develop strategies that will help grow their business or achieve determined goals. Although we have fun, we are competitive bunch, so once we are on your team, rest assured that we are committed to your business's success.</p>
-					
-				</div>	
-				<div id="hp-team">
-					<img src="/wp-content/uploads/2014/08/team-hp-venta.jpg">
-				</div>
+				<h2>Team Venta</h2>
+				<p>Our team is full of digitally-focused creatives. We believe in a job well done and love collaborating with clients to develop strategies that will help grow their business or achieve determined goals. Although we have fun, we are competitive bunch, so once we are on your team, rest assured that we are committed to your business's success.</p>
+			
 				<div style="clear:both"></div>
 			</div>
 		</div>
@@ -85,27 +80,40 @@ Template Name: Home
 <div id="hp-portfolio" class="homepage-portfolio">
 	<div class="container">
 		<h2 class="center-content">Our Recent Work</h2>
-			<div class="img">
-				<a href="http://lauraleeshealthyplate.com/" target="_blank"><img src="/wp-content/uploads/2014/08/llhp-hp-portfolio.jpg"></a>
+			
+	</div>
+	<?php 
+		$posts = get_posts(array(
+			'post_type'			=> 'portfolio'
+		));
+
+		if( $posts ): ?>
+			
+			<div class="portfolio denver-portfolio">
+				
+			<?php foreach( $posts as $post ): 
+				
+				setup_postdata( $post )
+				
+				?> 
+				<a href="<?php the_permalink(); ?>" class="portfolio-item">
+					<?php the_post_thumbnail( 'full' ); ?>
+					<div class="portfolio-content">
+						<h3><?php the_title(); ?></h3>
+						<p><?php the_field('tagline') ?></p>
+						
+					</div>
+					<div class="background"></div>
+				</a>
+			
+			<?php endforeach; ?>
+			
 			</div>
-			<div class="img">
-				<a href="http://democracy.missouri.edu/" target="_blank"><img src="/wp-content/uploads/2014/08/kinder-hp-portfolio.jpg"></a>
-			</div>
-			<div class="img">
-				<a href="http://constructionkdc.com/" target="_blank"><img src="/wp-content/uploads/2014/08/kdc-hp-portfolio.jpg"></a>
-			</div>
-			<div style="clear:both"></div>
-			<div class="img">
-				<a href="http://www.buttonwoodbusinesscenter.com/" target="_blank"><img src="/wp-content/uploads/2014/08/buttonwood-hp-portfolio.jpg"></a>
-			</div>
-			<div class="img">
-				<a href="http://drive.wallertruck.com/" target="_blank"><img src="/wp-content/uploads/2014/08/waller-hp-portfolio.jpg"></a>
-			</div>
-			<div class="img">
-				<a href="http://www.bezlerlawfirm.com/" target="_blank"><img src="/wp-content/uploads/2014/08/bezler-hp-portfolio.jpg"></a>
-			</div>
-			<div style="clear:both"></div>
-		</div>
+			
+			<?php wp_reset_postdata(); ?>
+
+		<?php endif; ?>
+		
 	</div>
 </div>
 

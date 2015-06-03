@@ -27,7 +27,7 @@ body {
 
 a {
 	text-decoration: none;
-	color: #000;
+	color: #669900;
 }
 
 ol,ul{
@@ -54,6 +54,7 @@ article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{
 
 @import 'bourbon/bourbon';
 @import 'neat/neat';
+@import 'portfolio';
 
 // icon font
 @font-face {
@@ -115,7 +116,7 @@ article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{
 	-moz-box-sizing: border-box;
 	-webkit-box-sizing: border-box;
 	box-sizing: border-box;
-  	background: url(/wp-content/uploads/2015/05/video.png) no-repeat center center fixed; 
+  	background: #000; 
   	-webkit-background-size: cover;
   	-moz-background-size: cover;
   	-o-background-size: cover;
@@ -196,7 +197,7 @@ $small: em(960);
 	display: inline-block;
 	position: relative;
 	flex-grow: 1;
-	width: 375px;
+	width: 250px;
 	@include align-items(stretch);
 	@include box-sizing(border-box);
 
@@ -207,11 +208,24 @@ $small: em(960);
 		bottom: 200px;
 		overflow: hidden;
 		opacity: 0;
-		position: relative;
+		position: absolute;
+		z-index: 9;
+		padding: 10px;
+		width: 100%;
+		@include box-sizing(border-box);
 		@include transition(all 250ms ease);
+		p {
+			color: #fff;
+			font-size: 1.2em;
+		}
+		h3 {
+			font-size: 3em;
+			line-height: 1.2;
+			letter-spacing: 2px;
+		}
 	}
 	.background {
-		background: rgba(238, 238, 238, 0.48);
+		background: rgba(0, 0, 0, 0.6);
 		position: absolute;
 		left: 0;
 		right: 0;
@@ -227,7 +241,7 @@ $small: em(960);
 			opacity: 1;
 		}
 		.portfolio-content {
-			bottom: 100px;
+			bottom: 160px;
 			opacity: 1;
 		}
 	}
@@ -240,6 +254,7 @@ h1, h2, h3, h4, h5, h6 {
 	font-family: $headerFont;
 	font-weight: 400;
 	margin: 0 0 15px;
+	letter-spacing: 1px;
 }
 
 h3 {
@@ -367,7 +382,7 @@ video {
 	min-width: 100%;
 	width: auto;
 	height: auto;
-	background: url(http://ventamarketing.com/wp-content/uploads/2015/05/video.png) no-repeat center center;
+	background: #000;
 	position: fixed;
 	top: 0;
 	left: 0;
@@ -375,6 +390,9 @@ video {
 	z-index: 0;
 	overflow: auto;
 	display: block;
+	@include media(max-width 48em) {
+		display: none;
+	}
 }
 
 .hp-header {
@@ -536,7 +554,7 @@ p.hp-cta a:hover {
 }
 
 #hp-portfolio {
-	background: #000;
+	background: rgba(0, 0, 0, 0.5);
 	position: relative;
 }
 #hp-portfolio .img {
@@ -561,7 +579,7 @@ p.hp-cta a:hover {
 }
 
 #hp-services {
-	background: rgb(0,0,0);
+	background: rgba(0, 0, 0, 0.5);
 	position: relative;
 	h2 {
 		color: #fff;
@@ -955,12 +973,13 @@ iframe[name='google_conversion_frame'] {
 	}
 
 	.hp-headline {
-		font-size: 36px;
+		font-size: 30px;
 		margin-bottom: 30px;
 	}
 
 	h2.hp-headline {
-		font-size: 22px;
+		font-size: 20px;
+		margin-bottom: 0;
 	}
 
 	#hp-portfolio #img {
@@ -969,19 +988,11 @@ iframe[name='google_conversion_frame'] {
 		float: none;
 	}
 
-	#hp-people #people-text {
+	#hp-people p {
 		float: none;
 		width: 90%;
 		margin: 20px 5% 10px;
 	}
-
-
-	#hp-people #hp-team {
-		float: none;
-		width: 90%;
-		margin: 10px 5%;
-	}
-
 	.step {
 		float: none;
 		width: 100%;
