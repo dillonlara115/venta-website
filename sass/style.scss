@@ -55,6 +55,7 @@ article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{
 @import 'bourbon/bourbon';
 @import 'neat/neat';
 @import 'portfolio';
+@import 'about';
 
 // icon font
 @font-face {
@@ -156,6 +157,9 @@ $small: em(960);
 	text-align: center;
 	display: block;
 	clear: both;
+}
+.body-container {
+	background: #fff;
 }
 .portfolio.denver-portfolio {
 	padding: 40px 0 0;
