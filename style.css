@@ -237,7 +237,7 @@ html {
 
 /* line 9, /Users/dillonlara/Sites/venta-marketing/sass/_about.scss */
 .team-member {
-  width: 250px;
+  width: 20%;
   position: relative;
   flex-grow: 1;
   -webkit-box-align: stretch;
@@ -252,7 +252,13 @@ html {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box; }
-  /* line 15, /Users/dillonlara/Sites/venta-marketing/sass/_about.scss */
+  @media screen and (max-width: 56em)  {
+    .team-member {
+      width: 30%; } }
+  @media screen and (max-width: 48em)  {
+    .team-member {
+      width: 300px; } }
+  /* line 22, /Users/dillonlara/Sites/venta-marketing/sass/_about.scss */
   .team-member:after {
     content: '';
     background-color: rgba(0, 0, 0, 0.37);
@@ -261,7 +267,7 @@ html {
     bottom: 0;
     left: 0;
     right: 0; }
-  /* line 24, /Users/dillonlara/Sites/venta-marketing/sass/_about.scss */
+  /* line 31, /Users/dillonlara/Sites/venta-marketing/sass/_about.scss */
   .team-member-title {
     position: absolute;
     padding: 10px;
@@ -269,11 +275,11 @@ html {
     width: 100%;
     text-align: center;
     z-index: 9; }
-    /* line 31, /Users/dillonlara/Sites/venta-marketing/sass/_about.scss */
+    /* line 38, /Users/dillonlara/Sites/venta-marketing/sass/_about.scss */
     .team-member-title p {
       text-transform: uppercase;
       font-size: 2em; }
-  /* line 36, /Users/dillonlara/Sites/venta-marketing/sass/_about.scss */
+  /* line 43, /Users/dillonlara/Sites/venta-marketing/sass/_about.scss */
   .team-member-description {
     overflow: hidden;
     opacity: 0;
@@ -295,7 +301,7 @@ html {
     -webkit-transition: opacity 250ms ease;
     -moz-transition: opacity 250ms ease;
     transition: opacity 250ms ease; }
-  /* line 54, /Users/dillonlara/Sites/venta-marketing/sass/_about.scss */
+  /* line 61, /Users/dillonlara/Sites/venta-marketing/sass/_about.scss */
   .team-member img {
     width: 100%;
     display: -webkit-box;
@@ -305,7 +311,7 @@ html {
     display: -moz-flex;
     display: -ms-flexbox;
     display: flex; }
-  /* line 59, /Users/dillonlara/Sites/venta-marketing/sass/_about.scss */
+  /* line 66, /Users/dillonlara/Sites/venta-marketing/sass/_about.scss */
   .team-member:hover .team-member-description {
     opacity: 1; }
 
