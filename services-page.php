@@ -21,7 +21,7 @@ Template Name: Services Page
 			<div class="main-content">
 				<?php the_content(); ?>
 			</div>
-			<?php dynamic_sidebar( 'contact-page-sidebar' ); ?>
+			<?php dynamic_sidebar( 'contact-sidebar' ); ?>
 		</div>
 		<div style="clear:both"></div>
 	</div>

@@ -15,7 +15,11 @@ Template Name: About Page
 		</div>
 	</div>
 </div>
+<div class="team-container">
+		<?php get_template_part('templates/team-members'); ?>
+	</div>
 <div class="body-container">
+	
 	<div class="container">
 		<div class="about-content">
 			<div class="main-content">
@@ -23,12 +27,9 @@ Template Name: About Page
 			</div>
 			<?php dynamic_sidebar( 'contact-sidebar' ); ?>
 		</div>
-		<h2 class="center-content">Our Team</h2>
-		
+		<div style="clear: both"></div>
 	</div>
-	<div class="team-container">
-		<?php get_template_part('templates/team-members'); ?>
-	</div>
+	
 </div>
 
 

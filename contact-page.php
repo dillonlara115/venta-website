@@ -17,14 +17,14 @@ Template Name: Contact Page
 <div class="body-container">
 	<div class="container">
 	<?php the_post(); ?>
-		<div id="post-<?php the_ID(); ?>">
+		<div id="post-<?php the_ID(); ?>" class="about-content">
 			<div class="main-content">
 				<?php the_content(); ?>
 			</div>
-			<?php dynamic_sidebar( 'contact-page-sidebar' ); ?>
 		</div>
-		<div style="clear:both"></div>
 	</div>
+	<?php dynamic_sidebar( 'contact-sidebar' ); ?>
+		<div style="clear:both"></div>
 </div>
 
 

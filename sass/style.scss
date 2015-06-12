@@ -57,6 +57,7 @@ article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{
 @import 'portfolio';
 @import 'about';
 @import 'forms';
+@import 'menu';
 
 // icon font
 @font-face {
@@ -162,22 +163,31 @@ $small: em(960);
 .body-container {
 	background: #fff;
 }
-.portfolio.denver-portfolio {
-	padding: 40px 0 0;
-	@include display(flex);
-	@include flex-direction(row);
-	@include align-items(stretch);
-	flex-wrap: wrap;
-	.portfolio-image {
-		margin: 0;
-		border: 0;
-		display: inline-block;
-		position: relative;
-		flex-grow: 1;
+
+.portfolio {
+	&.denver-portfolio {
+		padding: 40px 0 0;
+	}
+	&.main-portfolio {
+		padding: 0;
+	}
+	&.denver-portfolio, &.main-portfolio {
+		@include display(flex);
+		@include flex-direction(row);
 		@include align-items(stretch);
-		@include box-sizing(border-box);
-		img {
-			width: 100%;
+		flex-wrap: wrap;
+		.portfolio-image {
+			margin: 0;
+			border: 0;
+			display: inline-block;
+			position: relative;
+			flex-grow: 1;
+			@include align-items(stretch);
+			@include box-sizing(border-box);
+			img {
+				width: 100%;
+
+			}
 		}
 	}
 }
@@ -205,9 +215,9 @@ $small: em(960);
 	width: 250px;
 	@include align-items(stretch);
 	@include box-sizing(border-box);
-
 	img {
 		width: 100%;
+		@include display(flex);
 	}
 	.portfolio-content {
 		bottom: 200px;
@@ -227,6 +237,7 @@ $small: em(960);
 			font-size: 3em;
 			line-height: 1.2;
 			letter-spacing: 2px;
+			color: #fff;
 		}
 	}
 	.background {
@@ -300,7 +311,6 @@ em {
 .header-top {
 	width: 100%;
 	height: auto;
-	background: none;
 	position: absolute;
 	top: 0;
 	z-index: 9999;
@@ -344,40 +354,7 @@ img.logo {
 /* =Navigation
 ----------------------------------------------- */
 
-#navigation {
-	margin: 0;
-	padding: 0;
-	width: 40%;
-	float: right;
-	display: none;
-	ul {
-		margin: 0;
-		padding: 50px 0 0;
-		list-style-type: none;
-		line-height: 40px;
-	}
-	a {
-		text-align: center;
-		color: #fff;
-		font-weight: 400;
-		&:hover {
-			text-decoration: underline;
-		}
-	}
-}
 
-
-#navigation a li {
-	width: 33.33%;
-	float: left;
-	padding: 0;
-	text-align: center;
-}
-
-#navigation a:hover li{
-	background: none!important;
-	transition: .75s ease;
-}
 
 /* =Home Page
 ----------------------------------------------- */
@@ -559,8 +536,13 @@ p.hp-cta a:hover {
 }
 
 #hp-portfolio {
-	background: rgba(0, 0, 0, 0.5);
+	background: #000;
 	position: relative;
+	h2 {
+		color: #fff;
+		margin: 1em 0;
+		font-size: 2.5em;
+	}
 }
 #hp-portfolio .img {
 	width: 30%;
@@ -740,39 +722,7 @@ h1.entry-title {
 	padding: 1.5em 0; 
 }
 
-// contact widget
-.contact-widget  {
-	width: 300px;
-	padding:0 0 0 3em;
-	float: left;
-	@include media(max-width $small) {
-		width: 100%;
-	}
-	@include box-sizing(border-box);
-	.gform_wrapper {
-		label.gfield_label {
-			margin-bottom: .25em;
-			font-family: 'Oswald', sans-serif;
-			font-size: 1.2em;
-			letter-spacing: 1px;
-			font-weight: normal;
-		}
-		input, textarea {
-			border: 1px solid #669600;
-			padding: .5em!important; 
-			width: 100%!important;
-			@include box-sizing(border-box);
-		}
-		.gform_button {
-			color: #fff;
-			background: #669600;
-			padding: 4px 10px;
-		}
-		.gfield {
-			margin-bottom: 1em;
-		}
-	}
-}
+
 
 /* = Footer
 ----------------------------------------------- */

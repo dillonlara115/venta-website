@@ -1,5 +1,14 @@
-//contact form page
-#post-118 {
+$small: em(960);
+
+// contact widget
+.contact-widget  {
+	width: 300px;
+	padding:0 0 0 3em;
+	float: left;
+	@include media(max-width $small) {
+		width: 100%;
+	}
+	@include box-sizing(border-box);
 	.gform_wrapper .top_label input.medium, .gform_wrapper textarea.medium {
 		background-color: rgba(238, 238, 238, 0.75);
 		border: 1px solid rgba(204, 204, 204, 0.3);

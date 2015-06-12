@@ -84,7 +84,8 @@ Template Name: Home
 	</div>
 	<?php 
 		$posts = get_posts(array(
-			'post_type'			=> 'portfolio'
+			'post_type'			=> 'portfolio',
+			'showposts' => 4
 		));
 
 		if( $posts ): ?>
