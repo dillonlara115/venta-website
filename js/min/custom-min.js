@@ -1,0 +1,1 @@
+!function($){var e=$(".team-member");e.on("click",function(e){e.preventDefault()})}(jQuery);
