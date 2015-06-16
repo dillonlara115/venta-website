@@ -15,7 +15,7 @@ Template Name: About Page
 		</div>
 	</div>
 </div>
-<div class="team-container">
+<div class="team-outer-container">
 		<?php get_template_part('templates/team-members'); ?>
 	</div>
 <div class="body-container">

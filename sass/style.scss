@@ -162,6 +162,7 @@ $small: em(960);
 }
 .body-container {
 	background: #fff;
+	padding-top: 4em;
 }
 
 .portfolio {
@@ -175,12 +176,14 @@ $small: em(960);
 		@include display(flex);
 		@include flex-direction(row);
 		@include align-items(stretch);
+		-webkit-flex-wrap: wrap;
 		flex-wrap: wrap;
 		.portfolio-image {
 			margin: 0;
 			border: 0;
 			display: inline-block;
 			position: relative;
+			-webkit-flex-grow: 1;
 			flex-grow: 1;
 			@include align-items(stretch);
 			@include box-sizing(border-box);
@@ -211,7 +214,9 @@ $small: em(960);
 	border: 0;
 	display: inline-block;
 	position: relative;
+	-webkit-flex-grow: 1;
 	flex-grow: 1;
+	-webkit-flex-wrap: wrap;
 	width: 250px;
 	@include align-items(stretch);
 	@include box-sizing(border-box);
@@ -259,6 +264,9 @@ $small: em(960);
 		.portfolio-content {
 			bottom: 160px;
 			opacity: 1;
+			@include media(max-width $small) {
+				bottom: 40px;
+			}
 		}
 	}
 }
@@ -305,24 +313,7 @@ em {
 		max-width: 100px;
 	}
 }
-/* =Header
------------------------------------------------ */
 
-.header-top {
-	width: 100%;
-	height: auto;
-	position: absolute;
-	top: 0;
-	z-index: 9999;
-}
-
-img.logo {
-	height: 80px;
-	width: auto;
-	padding: 10px;
-	float: left;
-	margin: 0;
-}
 
 //services sections
 .services {
@@ -331,6 +322,7 @@ img.logo {
 		@include display(flex);
 		@include flex-direction(row);
 		@include align-items(stretch);
+		-webkit-flex-wrap: wrap;
 		flex-wrap: wrap;
 		.item {
 			margin: 0;
@@ -338,6 +330,7 @@ img.logo {
 			text-align: center;
 			width: 175px;
 			padding: 5px;
+			-webkit-flex-grow: 1;
 			flex-grow: 1;
 			@include align-items(stretch);
 			@include box-sizing(border-box);

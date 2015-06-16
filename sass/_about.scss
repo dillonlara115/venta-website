@@ -2,12 +2,15 @@
 	@include display(flex);
 	@include flex-direction(row);
 	@include align-items(stretch);
+	-webkit-flex-wrap: wrap;
 	flex-wrap: wrap;
+	border-top: 6px solid #690;
 }
 
 .team-member {
 	width: 20%;
 	position: relative;
+	-webkit-flex-grow: 1;
 	flex-grow: 1;
 	@include align-items(stretch);
 	@include box-sizing(border-box);
@@ -30,7 +33,7 @@
 	&-title {
 		position: absolute;
 		padding: 10px;
-		top: 50%;
+		bottom: 10%;
 		width: 100%;
 		text-align: center;
 		z-index: 9;

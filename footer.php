@@ -66,6 +66,7 @@ var google_remarketing_only = true;
 </script>
 <script type="text/javascript" src="//www.googleadservices.com/pagead/conversion.js">
 </script>
+<script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/js/min/jquery.sidr.min.js"></script>
 <script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/js/custom.js"></script>
 <noscript>
 <div style="display:inline;">

@@ -1,1 +1,1 @@
-!function($){var e=$(".team-member");e.on("click",function(e){e.preventDefault()})}(jQuery);
+!function($){$(document).ready(function(){$("#simple-menu").sidr({side:"right"})});var e=$(".team-member");e.on("click",function(e){e.preventDefault()}),$(window).scroll(function(){$(this).scrollTop()>50?$(".header-top").addClass("sticky"):$(".header-top").removeClass("sticky")})}(jQuery);

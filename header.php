@@ -6,6 +6,7 @@
 <title><?php wp_title(' | ', true, 'right'); ?></title>
 
 <link rel="stylesheet" type="text/css" href="<?php echo get_stylesheet_uri(); ?>" />
+<link rel="stylesheet" type="text/css" href="<?php bloginfo('template_url'); ?>/css/jquery.sidr.dark.css">
 
 <link href='http://fonts.googleapis.com/css?family=Oswald:400,300,700' rel='stylesheet' type='text/css'>
 <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
@@ -64,8 +65,10 @@
 
 
 <div class="header-top">
-<div class="container">
-	<a href="/"><img src="/wp-content/uploads/2014/08/venta-logo-bg-white.png" alt="Venta Marketing" class="logo"></a>
-	<?php wp_nav_menu(); ?>
-</div>
+	<div class="container">
+		<a href="/"><img src="/wp-content/uploads/2014/08/venta-logo-bg-white.png" alt="Venta Marketing" class="logo"></a>
+		<?php wp_nav_menu(); ?>
+		<a id="simple-menu" href="#sidr">&#8801;</a>
+	</div>
+	<?php wp_nav_menu( array('menu_class' => 'navigation-menu show', 'container_id' => 'sidr'  ) ); ?>
 </div>

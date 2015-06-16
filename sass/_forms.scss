@@ -2,25 +2,33 @@ $small: em(960);
 
 // contact widget
 .contact-widget  {
-	width: 300px;
+	max-width: 300px;
 	padding:0 0 0 3em;
 	float: left;
 	@include media(max-width $small) {
 		width: 100%;
+		padding: .5em;
 	}
 	@include box-sizing(border-box);
 	.gform_wrapper .top_label input.medium, .gform_wrapper textarea.medium {
 		background-color: rgba(238, 238, 238, 0.75);
 		border: 1px solid rgba(204, 204, 204, 0.3);
-		min-width: 300px;
-		width: 80%;
+		@include media(min-width $small) {
+			min-width: 300px;
+			width: 80%;
+		}
+		
+		width: 100%;
 	}
 	.gform_wrapper .gform_footer input.button, .gform_wrapper .gform_footer input[type=submit] {
 		border: 1px solid #669600;
 		background-color: #669600;
 		padding: .5em !important;
-		min-width: 300px;
-		width: 80%;
+		@include media(min-width $small) {
+			min-width: 300px;
+			width: 80%;
+		}
+		width: 100%;
 		text-transform: uppercase;
 		color: #fff;
 		cursor: pointer;
