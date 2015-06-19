@@ -65,10 +65,12 @@
 
 
 <div class="header-top">
-	<div class="container">
-		<a href="/"><img src="/wp-content/uploads/2014/08/venta-logo-bg-white.png" alt="Venta Marketing" class="logo"></a>
+	<a href="/"><img src="/wp-content/uploads/2015/06/venta-logo-desktop.png" alt="Venta Marketing" class="desktop logo"></a>
+	<a href="/"><img src="/wp-content/uploads/2015/06/venta-logo-mobile.png" alt="Venta Marketing" class="mobile logo"></a>
+	<div class="desktop">
 		<?php wp_nav_menu(); ?>
-		<a id="simple-menu" href="#sidr">&#8801;</a>
 	</div>
+	
+	<a id="simple-menu" href="#sidr">&#8801;</a>
 	<?php wp_nav_menu( array('menu_class' => 'navigation-menu show', 'container_id' => 'sidr'  ) ); ?>
 </div>

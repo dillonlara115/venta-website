@@ -11,6 +11,7 @@ Template Name: About Page
 			<div class="hp-headline portfolio-headline">
 				<?php the_title(); ?>
 			</div>
+			<p class="portfolio-tagline"><?php the_field('page_tagline'); ?></p>
 			<div style="clear: both"></div>
 		</div>
 	</div>

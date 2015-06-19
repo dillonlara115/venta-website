@@ -50,7 +50,7 @@
 		</div>
 		
 	<div class="portfolio-site cl-effect-18">
-		<a href="http://<?php the_field('project_url'); ?>" target="_blank"><span data-hover="Visit Site">Visit Site</span></a>
+		<a href="http://<?php the_field('project_url'); ?>" target="_blank"><span data-hover="Visit Site">Visit <strong>Site</strong></span></a>
 	</div>
 		
 	</div>

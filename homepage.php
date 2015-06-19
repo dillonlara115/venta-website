@@ -13,9 +13,9 @@ Template Name: Home
 		<source src="<?php bloginfo('template_url'); ?>/video/venta.webm" type="video/webm"/>
 	</video>
 	<div class="container">
-		<div class="hp-headline">Grow Your Business with Venta</div>
+		<div class="hp-headline">Digital Marketing & Web Design</div>
 			<h2 class="hp-headline">we help businesses identify, visualize, and achieve their goals through adaptive digital marketing</h2>
-			<!--<p class="hp-cta"><a href="/">Start Your Project</a></p>-->
+			
 			<div style="clear: both"></div>
 		</div>
 	</div>
@@ -64,23 +64,10 @@ Template Name: Home
 	<div style="clear:both"></div>
 </div>
 
-<div class="content-bg">
-	<div class="container">
-		<div class="content">
-			<div id="hp-people">
-				<h2>Team Venta</h2>
-				<p>Our team is full of digitally-focused creatives. We believe in a job well done and love collaborating with clients to develop strategies that will help grow their business or achieve determined goals. Although we have fun, we are competitive bunch, so once we are on your team, rest assured that we are committed to your business's success.</p>
-			
-				<div style="clear:both"></div>
-			</div>
-		</div>
-	</div>
-</div>
-
 <div id="hp-portfolio" class="homepage-portfolio">
 	<div class="container">
 		<h2 class="center-content">Our Recent Work</h2>
-			
+			<p style="text-align: center; color: #fff;">We take a goal-centered approach to every project and are committed to developing websites that our clients are proud to call theirs.</p>
 	</div>
 	<?php 
 		$posts = get_posts(array(

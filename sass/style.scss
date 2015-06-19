@@ -71,6 +71,19 @@ article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{
 	font-style: normal;
 }
 
+@font-face {
+	font-family: 'Langdon';
+	src:url('/wp-content/themes/venta-marketing/fonts/Langdon.otf');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'gist';
+	src:url('/wp-content/themes/venta-marketing/fonts/gist.otf');
+	font-weight: normal;
+	font-style: normal;
+}
+
 [class^="icon-"], [class*=" icon-"] {
 	font-family: 'venta';
 	speak: none;
@@ -373,29 +386,30 @@ video {
 .hp-header {
 	width: 100%;
 	margin: 0;
-	padding: 250px 0 150px; 
+	padding: 200px 0 100px; 
 }
 
 .hp-headline {
 	text-align: center;
 	color: #fff;
-	font-size: 60px;
-	line-height: 1.5em;
-	margin: 10px 10% 20px;
-	font-family: 'Oswald', sans-serif;
+	font-size: 80px;
+	line-height: 1.3em;
+	font-family: 'gist', sans-serif;
 	font-weight: 400;
+	text-transform: uppercase;
 }
 
 
 h2.hp-headline {
 	text-align: center;
 	color: #fff;
-	font-size: 26px;
+	font-size: 30px;
 	font-weight: 300;
 	line-height: 1.5em;
 	margin: 10px 10% 80px;
 	font-family: 'Open Sans', sans-serif;
 	font-style: italic;
+	text-transform: lowercase;
 }
 
 p.hp-cta {
@@ -529,7 +543,7 @@ p.hp-cta a:hover {
 }
 
 #hp-portfolio {
-	background: #000;
+	background: rgba(0, 0, 0, 0.55);
 	position: relative;
 	h2 {
 		color: #fff;
@@ -559,7 +573,7 @@ p.hp-cta a:hover {
 }
 
 #hp-services {
-	background: rgba(0, 0, 0, 0.5);
+	background: rgba(0, 0, 0, 0.7);
 	position: relative;
 	h2 {
 		color: #fff;
@@ -965,7 +979,7 @@ iframe[name='google_conversion_frame'] {
 @media only screen and (max-width : 480px) {
 	img.logo {
 		height: auto;
-		width: 20%;
+		width: 50%;
 	}	
 
 	#navigation {

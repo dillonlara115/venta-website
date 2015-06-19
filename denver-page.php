@@ -18,7 +18,6 @@ Template Name: Denver Page
 	</div>
 	<?php dynamic_sidebar( 'contact-sidebar' ); ?>
 </div>
-<h2 class="center-content">Our Recent Work</h2>
 <?php 
 
 $posts = get_posts(array(
