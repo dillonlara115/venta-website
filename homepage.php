@@ -69,40 +69,47 @@ Template Name: Home
 		<h2 class="center-content">Our Recent Work</h2>
 			<p style="text-align: center; color: #fff;">We take a goal-centered approach to every project and are committed to developing websites that our clients are proud to call theirs.</p>
 	</div>
+
 	<?php 
-		$posts = get_posts(array(
-			'post_type'			=> 'portfolio',
-			'showposts' => 4
-		));
 
-		if( $posts ): ?>
-			
-			<div class="portfolio denver-portfolio">
-				
-			<?php foreach( $posts as $post ): 
-				
-				setup_postdata( $post )
-				
-				?> 
-				<a href="<?php the_permalink(); ?>" class="portfolio-item">
-					<?php the_post_thumbnail( 'full' ); ?>
-					<div class="portfolio-content">
-						<h3><?php the_title(); ?></h3>
-						<p><?php the_field('tagline') ?></p>
-						
-					</div>
-					<div class="background"></div>
-				</a>
-			
-			<?php endforeach; ?>
-			
-			</div>
-			
-			<?php wp_reset_postdata(); ?>
+	// args
+	$args = array(
+		'numberposts'	=> -1,
+		'showposts' => 4,
+		'post_type'		=> 'portfolio',
+		'meta_query' => array(
+		'relation'		=> 'AND',
+			array(
+				'key'		=> 'category',
+				'value'		=> 'Featured',
+				'compare'	=> 'LIKE'
+			),
+		),
+	);
 
-		<?php endif; ?>
-		
-	</div>
+	// query
+	$the_query = new WP_Query( $args );
+
+	?>
+	<?php if( $the_query->have_posts() ): ?>
+		<div class="portfolio denver-portfolio">
+		<?php while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
+			<a href="<?php the_permalink(); ?>" class="portfolio-item">
+						<?php the_post_thumbnail( 'full' ); ?>
+						<div class="portfolio-content">
+							<h3><?php the_field('tagline') ?></h3>
+							<p><?php the_field('tagline') ?></p>
+							
+						</div>
+						<div class="background"></div>
+					</a>
+		 <?php  endwhile; ?>
+
+		</div>
+	<?php endif; ?>
+
+	<?php wp_reset_query();	 // Restore global post data stomped by the_post(). ?>
+
 </div>
 
 <div id="hp-testimonials">

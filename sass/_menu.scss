@@ -3,7 +3,7 @@
 $primary-color: #669600;
 
 img.logo {
-	height: 80px;
+	height: 70px;
 	width: auto;
 	padding: 10px;
 	float: left;
@@ -28,8 +28,8 @@ img.logo {
 	width: 100%;
 	height: auto;
 	z-index: 9999;
-	background-color: rgba(102, 150, 0, 0.89);
-	padding: .5em 5em;
+	background-color: rgba(102, 150, 0, 0.95);
+	padding: .3em 5em;
 	.desktop .menu-main-menu-container {
 		@include media(max-width 48em) {
 			display: none;
@@ -70,7 +70,7 @@ img.logo {
 	}
 	&.sticky {
 		@include media(min-width 48em) {
-			background-color: rgba(0, 0, 0, 0.85) !important;
+			background-color: rgba(0, 0, 0, 0.95) !important;
 			-webkit-transform: translateY(-11%);
 			-moz-transform: translateY(-11%);
 			transform: translateY(-11%);
@@ -84,6 +84,9 @@ img.logo {
 				&:hover {
 					color: #fff;
 				}
+			}
+			.menu-main-menu-container ul li a:hover {
+				color: $primary-color;
 			}
 			#primary-menu>li:hover .sub-menu {
 				top: 59px;
@@ -220,7 +223,7 @@ $background-color: #000;
 				-ms-transition: color 0.35s ease-out;
 				-o-transition: color 0.35s ease-out;
 				transition: color 0.35s ease-out;
-				line-height: 1.3;
+				line-height: .8;
 				text-transform: uppercase;
 				color: #fff;
 				font-size: 1em;

@@ -1,33 +1,47 @@
 </div>
 
-<div class="footer test">
-	<div class="footer-top">
-		<div class="columbia">
-			<div class="location">
-				<h3>Columbia, MO</h3>
-				<p>3401 Broadway Business Park Ct<br>Suite 107<br>Columbia, MO 65203</p>
-				<p><a href="tel:5733405435">573.340.5435</a></p>
+<div class="footer">
+	<div class="container">
+		<div id="left">
+			<div id="footer-contact">
+				<span>
+					<h5>Columbia, MO (hq)</h5>
+					<p id="location">3401 Broadway Business Park Ct #107, Columbia, MO 65203</p>
+					<p id="phone">573.340.5435</p>
+				</span>
 			</div>
 		</div>
-		<div class="denver">
-			<div class="location">
-				<h3>Denver, CO</h3>
-				<p>110 16th Street<br>Suite 1300G<br>Denver, CO 80202</p>
-				<p><a href="tel:3039284133">303.928.4133</a></p>
+		<div id="center">
+			<h4>Lets Chat</h4>
+			<?php gravity_form(1, false, false, false, '', false); ?>
+			<div class="social-media">
+				<a href="https://plus.google.com/115133894189970364615" rel="publisher" target="_blank"><i class="fa fa-2x fa-google-plus-square"></i></a>
+				<a href="https://www.facebook.com/VentaMarketing573" target="_blank"><i class="fa fa-2x fa-facebook-official"></i></a>
+				<a href="https://twitter.com/venta_marketing" target="_blank"><i class="fa fa-2x fa-twitter-square"></i></a>
+			</div>
+			
+		</div>
+		<div id="right">
+			<div id="footer-contact">
+				<span>
+					<h5><a href="/denver">Denver, CO</a></h5>
+					<p id="location">110 16th Street #1300G, Denver, CO 80202</p>
+					<p id="phone">303.928.4133</p>
+				</span>
 			</div>
 		</div>
-	</div>
-	<div class="footer-bottom">
-		<div class="social-media">
-			<a href="https://plus.google.com/115133894189970364615" rel="publisher" target="_blank"><img src="/wp-content/uploads/2015/06/google-footer-social-venta.png"></a>
-			<a href="https://www.facebook.com/VentaMarketing573" target="_blank"><img src="/wp-content/uploads/2015/06/facebook-footer-social-venta.png"></a>
-			<a href="https://twitter.com/venta_marketing" target="_blank"><img src="/wp-content/uploads/2015/06/twitter-footer-social-venta.png"></a>
-			<a href="https://linkedin.com/venta_marketing" target="_blank"><img src="/wp-content/uploads/2015/06/linkedin-footer-social-venta.png"></a>
-		</div>
-		<?php wp_nav_menu(); ?>
+		<div style="clear: both"></div>
 	</div>
 </div>
 
+<div class="footer-bottom">
+<div id="first"></div>
+<div id="second"></div>
+<div id="third"></div>
+<div id="fourth"></div>
+<div id="fifth"></div>
+<div style="clear: both"></div>
+</div>
 
 </div>
 

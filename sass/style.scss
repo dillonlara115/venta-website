@@ -58,6 +58,7 @@ article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{
 @import 'about';
 @import 'forms';
 @import 'menu';
+@import 'footer';
 
 // icon font
 @font-face {
@@ -275,7 +276,7 @@ $small: em(960);
 			opacity: 1;
 		}
 		.portfolio-content {
-			bottom: 160px;
+			bottom: 20%;
 			opacity: 1;
 			@include media(max-width $small) {
 				bottom: 40px;
@@ -731,155 +732,7 @@ h1.entry-title {
 
 
 
-/* = Footer
------------------------------------------------ */
-.footer {
-	clear: both;
-	width: 100%;
-	margin: 0;
-	padding: 0;
-	background: #000;
-	color: #fff;
-	position: relative;
-	.container {
-		max-width: 2000px;
-	}
-	a {
-		color: #fff;
-	}
-	h5 {
-		font-size: 18px;
-		border-bottom: none;
-		a {
-			color: #000;
-		}
-	}
-	#center {
-		float: left;
-		width: 28%;
-		padding: 0 1%;
-		h4 {
-			margin: 0;
-		}
-	}
-}
 
-.footer h4, .footer h5 {
-	color: #fff;
-	border-bottom: 4px solid #fff;
-	padding-bottom: 5px;
-	font-size: 22px;
-}
-
-
-.footer #left, .footer #right {
-	min-height: 400px;
-	text-align: center;
-}
-
-.footer #left {
-	float: left;
-	width: 35%;
-	background: url(/wp-content/uploads/2014/08/mo-footer-venta.jpg) no-repeat center center;
-}
-
-.footer #center .gform_wrapper {
-	margin: 0;
-}
-
-.footer #center .gform_body .medium {
-	width: 100%;
-}
-
-.footer #center .gform_footer {
-	margin: 0;
-	padding: 0;
-}
-
-.footer #center .gform_button {
-	color: #fff;
-	background: #669600;
-	padding: 4px 10px;
-}
-
-.footer #center .gfield_label {
-	font-weight: 300;
-	padding: 0;
-	margin: 0;
-}
-
-.footer #right {
-	float: left;
-	width: 35%;
-	background: url(/wp-content/uploads/2014/08/co-footer-venta.jpg) no-repeat center center;
-}
-iframe[name='google_conversion_frame'] { 
-	  height: 0 !important;
-    width: 0 !important; 
-    line-height: 0 !important; 
-    font-size: 0 !important;
-    margin-top: -13px;
-    float: left;
-}
-.footer #footer-contact {
-	margin: 100px 40px 0;
-	background: rgb(255,255,255);
-	background: rgba(255,255,255,.5);
-	width: 200px;
-	padding: 20px;
-}
-
-.footer #left #footer-contact {
-	float: right;
-}
-
-.footer #right #footer-contact {
-	float: left;
-}
-
-#footer-contact h5, #footer-contact p {
-	font-size: 16px;
-	color: #000;	
-	margin: 0 0 6px;
-	padding: 0;
-	line-height: 1.5em;
-	font-family: 'Open Sans', sans-serif;
-	font-weight: 700;
-}
-
-#footer-contact p {
-	font-size: 14px;
-	margin: 0 0 4px;
-	font-weight: 400;
-}
-
-.footer-bottom {
-	width: 100%;
-	display: block;
-	background: #000;
-	#second {
-		background: #334B00;
-	}
-
-	#third {
-		background: #4D7000;
-	}
-
-	#fourth {
-		background: #5A8300;
-	}
-
-	#fifth {
-		background: #669600;
-	}
-}
-
-.footer-bottom #first, .footer-bottom #second, .footer-bottom #third, .footer-bottom #fourth, .footer-bottom #fifth {
-	width: 20%;
-	height: 10px;
-	display: block;
-	float: left;
-}
 
 /* social media */
 .social-media {
