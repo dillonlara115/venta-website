@@ -762,6 +762,130 @@ h1.entry-title {
 }
 
 
+
+/* = New Styles
+----------------------------------------------- */
+.services-venta {
+	width: 100%;
+	margin: 20px 0;
+}
+
+.service-venta {
+	width: 28.33%;
+	margin: 10px 2.5%;
+	float: left;
+	.img {
+		width: 150px;
+		margin: 0 auto 10px;
+		img {
+			width: 100%;
+		}
+	}
+	h2 {
+		color: #669600!important;
+		font-size: 20px;
+		text-transform: uppercase;
+	}
+
+	ul {
+		margin: 30px 0 10px;
+		li {
+			list-style-type: none;
+			text-align: center;
+			padding: 10px 0;
+			font-size: 18px;
+			color: #fff;
+		  	border-bottom: 1px solid #fff;
+		}
+	}
+
+}
+
+
+.hp-header.hp-header-portfolio {
+	padding: 180px 0 60px;
+}
+
+#hp-testimonials {
+	padding: 40px;
+}
+
+#hp-portfolio {
+	background: rgba(255,255,255,.95);
+	text-align: center;
+	h2 {
+		color: #669600;
+		font-size: 26px;
+	}
+}
+
+.footer.test .footer-bottom {
+	padding: 30px 0 10px;
+}
+
+.footer-bottom .menu-main-menu-container {
+	margin: 10px 0 20px;
+}
+
+p.copyright {
+	text-align: center;
+	font-size: 12px;
+}
+
+.team-member:hover .team-member-title {
+	display: none;
+}
+
+.team-member-title p {
+	margin: 0 0 5px;
+}
+
+.team-member-description { 
+	background: rgba(0,0,0,.6);
+	padding: 20px;
+	color: #fff;
+}
+
+.address h2 {
+	font-size: 18px!important;
+	margin: 0 0 5px!important;
+}
+
+img.cert {
+	float: left;
+	width: 90px;
+	margin: 10px;
+}
+
+.body-container {
+	padding: 0;
+	border-top: 6px solid #690;
+}
+
+.footer-top{
+	border-top: 6px solid #690;
+}
+
+@media only screen and (max-width: 768px) {
+	.service-venta {
+		width: 80%;
+		margin: 10px auto;
+		float: none;
+	}
+
+	.service-venta ul {
+		margin: 30px;
+	}
+}
+
+@media only screen and (max-width: 480px) {
+	.hp-header.hp-header-portfolio {
+		padding: 60px 0 20px;
+	}
+}
+
+
+
 /* = Responsive Media Queries
 ----------------------------------------------- */
 @media only screen and (max-width : 980px) {

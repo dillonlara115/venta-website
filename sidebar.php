@@ -4,6 +4,7 @@
 <ul class="sid">
 <?php dynamic_sidebar('primary-widget-area'); ?>
 </ul>
+<div style="clear:both"></div>
 </div>
 <?php endif; ?>
 </aside>

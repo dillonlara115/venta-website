@@ -7,7 +7,7 @@ Template Name: Denver Page
 <?php get_header(); ?>
 <div id="hp-header" class="hp-header hp-header-denver">
 	<div class="container">
-		<div class="hp-headline">Venta Denver, CO</div>
+		<div class="hp-headline">Venta Denver</div>
 		<div style="clear: both"></div>
 	</div>
 </div>
@@ -50,23 +50,48 @@ if( $posts ): ?>
 	<?php wp_reset_postdata(); ?>
 
 <?php endif; ?>
-<div class="services">
-	<h2 class="center-content">Our Services</h2>
+<div id="hp-services">
 	<div class="container">
-		<div class="item"><i class="icon-design-and-creative"></i><h3>Design & Creative</h3>
-		<p>Our team is passionate about branding, design and creative. We design your marketing elements - from print to website to logos and more - to serve as an identifiable and memorable icon of your brand, so you don’t get lost in the crowd. </p>
-		</div>
-		<div class="item"><i class="icon-seo-marketing-without-glare"></i><h3>SEO</h3>
-			<p>Our SEO specialists will optimize your website to generate traffic, build your site’s domain authority by creating useful and shareable content, and grow your online presence using the latest and most effective SEO tactics to date. </p>
-		</div>
-		<div class="item"><i class="icon-ppc-optimization"></i><h3>PPC</h3>
-			<p>Pay-Per-Click Advertising drives leads & markets your services online by putting your business in front of people who are already searching for you. We create PPC strategies, manage, test & design campaigns for the most optimized success.</p>
-		</div>
-		<div class="item"><i class="icon-web-design-and-development"></i><h3>Web Design & Dev</h3>
-			<p>Today’s responsive web calls for uncompromising content and functionality. Venta’s web design & development team creates beautifully optimized websites, leveraging open-source CMS to customize your specific business needs.</p>
-		</div>
-		<div class="item"><i class="icon-video-marketing-production"></i><h3>Video</h3>
-			<p>Videos are one of the most powerful ways of increasing website conversion rates on your website. We’ll work from start to finish on your videos from pre-production, post-production editing, video SEO, website embedding and more. </p>
+		<h2><span>Our Services</span></h2>
+		<p>Our organized process and approach to projects allows our team to effectively collaborate with clients to develop the best possible end product that addresses yours goals and achieves maximum success.</p>
+		<div class="services-venta">
+			<div class="service-venta">
+				<div class="img">
+					<img src="/wp-content/uploads/2015/06/web-design-service-icn-white-venta.png">
+				</div>
+				<h2>Web Design & Development</h2>
+				<ul>
+					<li>Responsive Web Design</li>
+					<li>WordPress Web Design</li>
+					<li>E-Commerce Web Design</li>
+					<li>Custom Web Development</li>
+				</ul>
+			</div>
+			<div class="service-venta">
+				<div class="img">
+					<img src="/wp-content/uploads/2015/06/internet-marketing-service-icn-white-venta.png">
+				</div>
+				<h2>Internet Marketing</h2>
+				<ul>
+					<li>Search Engine Optimization</li>
+					<li>Pay-Per-Click</li>
+					<li>Email Marketing</li>
+					<li>Social Media</li>
+				</ul>
+			</div>
+			<div class="service-venta">
+				<div class="img">
+					<img src="/wp-content/uploads/2015/06/creative-service-icn-white-venta.png">
+				</div>
+				<h2>Visual & Creative</h2>
+				<ul>
+					<li>Video Production</li>
+					<li>Collateral Design</li>
+					<li>Logo Design</li>
+					<li>Photography</li>
+				</ul>
+			</div>
+		<div style="clear:both"></div>
 		</div>
 	</div>
 </div>

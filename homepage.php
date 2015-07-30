@@ -43,74 +43,94 @@ Template Name: Home
 	<div class="container">
 		<h2><span>Our Services</span></h2>
 		<p>Our organized process and approach to projects allows our team to effectively collaborate with clients to develop the best possible end product that addresses yours goals and achieves maximum success.</p>
-		
+		<div class="services-venta">
+			<div class="service-venta">
+				<div class="img">
+					<img src="/wp-content/uploads/2015/06/web-design-service-icn-white-venta.png">
+				</div>
+				<h2>Web Design & Development</h2>
+				<ul>
+					<li>Responsive Web Design</li>
+					<li>WordPress Web Design</li>
+					<li>E-Commerce Web Design</li>
+					<li>Custom Web Development</li>
+				</ul>
+			</div>
+			<div class="service-venta">
+				<div class="img">
+					<img src="/wp-content/uploads/2015/06/internet-marketing-service-icn-white-venta.png">
+				</div>
+				<h2>Internet Marketing</h2>
+				<ul>
+					<li>Search Engine Optimization</li>
+					<li>Pay-Per-Click</li>
+					<li>Email Marketing</li>
+					<li>Social Media</li>
+				</ul>
+			</div>
+			<div class="service-venta">
+				<div class="img">
+					<img src="/wp-content/uploads/2015/06/creative-service-icn-white-venta.png">
+				</div>
+				<h2>Visual & Creative</h2>
+				<ul>
+					<li>Video Production</li>
+					<li>Collateral Design</li>
+					<li>Logo Design</li>
+					<li>Photography</li>
+				</ul>
+			</div>
+		<div style="clear:both"></div>
+		</div>
 	</div>
-	<div class="step one">
-		<h3>Web Design</h3>
-		<span class="section-content"><span>We design and develop creatively, simple websites that help our clients achieve their goals.</span></span> 
-	</div>
-	<div class="step two">
-		<h3>Internet Marketing</h3>			
-		<span class="section-content"><span>Our Internet marketing strategies are built to drive traffic and deliver results.</span></span> 
-	</div>
-	<div class="step three">
-		<h3>Video</h3>
-		<span class="section-content"><span>Professional video production that effectively delivers your company's message.</span></span> 
-	</div>
-	<div class="step four">
-		<h3>Design & Creative</h3>
-		<span class="section-content"><span>Creative services that correctly promote and brand your company as an industry leader.</span></span> 
-	</div>
-	<div style="clear:both"></div>
 </div>
 
 <div id="hp-portfolio" class="homepage-portfolio">
 	<div class="container">
 		<h2 class="center-content">Our Recent Work</h2>
-			<p style="text-align: center; color: #fff;">We take a goal-centered approach to every project and are committed to developing websites that our clients are proud to call theirs.</p>
+		<p>We take a goal-centered approach to every project and are committed to developing websites that our clients are proud to call theirs.</p>
 	</div>
 
 	<?php 
 
-	// args
-	$args = array(
-		'numberposts'	=> -1,
-		'showposts' => 4,
-		'post_type'		=> 'portfolio',
-		'meta_query' => array(
-		'relation'		=> 'AND',
-			array(
-				'key'		=> 'category',
-				'value'		=> 'Featured',
-				'compare'	=> 'LIKE'
-			),
+// args
+$args = array(
+	'numberposts'	=> -1,
+	'showposts' => 4,
+	'post_type'		=> 'portfolio',
+	'meta_query' => array(
+	'relation'		=> 'AND',
+		array(
+			'key'		=> 'category',
+			'value'		=> 'Featured',
+			'compare'	=> 'LIKE'
 		),
-	);
+	),
+);
 
-	// query
-	$the_query = new WP_Query( $args );
 
-	?>
-	<?php if( $the_query->have_posts() ): ?>
-		<div class="portfolio denver-portfolio">
-		<?php while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
-			<a href="<?php the_permalink(); ?>" class="portfolio-item">
-						<?php the_post_thumbnail( 'full' ); ?>
-						<div class="portfolio-content">
-							<h3><?php the_field('tagline') ?></h3>
-							<p><?php the_field('tagline') ?></p>
-							
-						</div>
-						<div class="background"></div>
-					</a>
-		 <?php  endwhile; ?>
+// query
+$the_query = new WP_Query( $args );
 
-		</div>
-	<?php endif; ?>
+?>
+<?php if( $the_query->have_posts() ): ?>
+	<div class="portfolio denver-portfolio">
+	<?php while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
+		<a href="<?php the_permalink(); ?>" class="portfolio-item">
+					<?php the_post_thumbnail( 'full' ); ?>
+					<div class="portfolio-content">
+						<h3><?php the_title(); ?></h3>
+						<p><?php the_field('tagline') ?></p>
+						
+					</div>
+					<div class="background"></div>
+				</a>
+	 <?php  endwhile; ?>
 
-	<?php wp_reset_query();	 // Restore global post data stomped by the_post(). ?>
+	</div>
+<?php endif; ?>
 
-</div>
+<?php wp_reset_query();	 // Restore global post data stomped by the_post(). ?>
 
 <div id="hp-testimonials">
 	<div class="container">
@@ -120,6 +140,7 @@ Template Name: Home
 			<a href="http://www.boyle.com/" target="_blank"><img src="/wp-content/uploads/2014/08/boyle-logo.jpg"></a>
 		</div>
 	</div>
+</div>
 </div>
 <div style="clear:both"></div>
 </div>
