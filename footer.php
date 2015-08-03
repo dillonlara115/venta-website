@@ -23,9 +23,11 @@
 				<a href="https://plus.google.com/115133894189970364615" rel="publisher" target="_blank"><img src="/wp-content/uploads/2015/06/google-footer-social-venta.png"></a>
 				<a href="https://www.facebook.com/VentaMarketing573" target="_blank"><img src="/wp-content/uploads/2015/06/facebook-footer-social-venta.png"></a>
 				<a href="https://twitter.com/venta_marketing" target="_blank"><img src="/wp-content/uploads/2015/06/twitter-footer-social-venta.png"></a>
-				<a href="https://linkedin.com/venta_marketing" target="_blank"><img src="/wp-content/uploads/2015/06/linkedin-footer-social-venta.png"></a>
+				<a href="https://www.linkedin.com/company/prokell-seo-llc" target="_blank"><img src="/wp-content/uploads/2015/06/linkedin-footer-social-venta.png"></a>
 			</div>
-			<?php wp_nav_menu(); ?>
+			<div class="hidden-xs">
+				<?php wp_nav_menu(); ?>
+			</div>
 			<p class="copyright">Copyright &copy <?php echo date('Y'); ?>. All Right Reserved Venta Marketing.</p>
 		</div>
 	</div>

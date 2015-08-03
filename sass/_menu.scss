@@ -64,7 +64,7 @@ img.logo {
 	backface-visibility: hidden;
 	-webkit-backface-visibility: hidden;
 	@media (max-width: 56em) {
-		position: initial;
+		position: absolute;
 		display: inline-block;
 		padding: .5em;
 	}

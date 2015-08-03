@@ -115,16 +115,14 @@ $the_query = new WP_Query( $args );
 ?>
 <?php if( $the_query->have_posts() ): ?>
 	<div class="portfolio denver-portfolio">
-	<?php while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
+	<?php while ( $the_query->have_posts() ) : $the_query->the_post(); 
+		$logo = get_field('logo');
+		$whiteLogo = get_field('white_logo');
+	?>
 		<a href="<?php the_permalink(); ?>" class="portfolio-item">
-					<?php the_post_thumbnail( 'full' ); ?>
-					<div class="portfolio-content">
-						<h3><?php the_title(); ?></h3>
-						<p><?php the_field('tagline') ?></p>
-						
-					</div>
-					<div class="background"></div>
-				</a>
+			<?php the_post_thumbnail( 'full', array( 'class' => 'main-portfolio-image' )  ); ?>
+			<img src="<?php echo $logo['url']; ?>" alt="<?php echo $logo['alt']; ?>" class="color-logo"/>
+		</a>
 	 <?php  endwhile; ?>
 
 	</div>

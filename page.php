@@ -1,10 +1,16 @@
 <?php get_header(); ?>
-
-<div class="about">
-	<h1 class="entry-title"><span><?php the_title(); ?></span></h1>
+<?php $feat_image = wp_get_attachment_url( get_post_thumbnail_id($post->ID) ); ?>
+	<div id="hp-header" class="hp-header hp-header-portfolio" style="background: url(<?php echo $feat_image ?>) no-repeat center center;background-size: cover;" >
+		<div class="container">
+			<div class="hp-headline portfolio-headline">
+				<?php the_title(); ?>
+			</div>
+			<div style="clear: both"></div>
+		</div>
+	</div>
 </div>
 
-<div class="content-bg">
+<div class="body-container">
 	<div class="container">
 	<?php the_post(); ?>
 		<div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
