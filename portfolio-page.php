@@ -18,11 +18,7 @@ Template Name: Portfolio Landing Page
 <div class="body-container">
 	<?php 
 		$posts = get_posts(array(
-<<<<<<< HEAD
 			'showposts' => 8,
-=======
-			'showposts' => 4,
->>>>>>> origin/master
 			'post_type'			=> 'portfolio',
 		));
 
@@ -37,17 +33,8 @@ Template Name: Portfolio Landing Page
 				$whiteLogo = get_field('white_logo');
 				?> 
 				<a href="<?php the_permalink(); ?>" class="portfolio-item">
-<<<<<<< HEAD
 					<?php the_post_thumbnail( 'full', array( 'class' => 'main-portfolio-image' )  ); ?>
 					<img src="<?php echo $logo['url']; ?>" alt="<?php echo $logo['alt']; ?>" class="color-logo"/>
-=======
-					<?php the_post_thumbnail( 'full' ); ?>
-					<img src="<?php echo $whiteLogo['url']; ?>" alt="<?php echo $whiteLogo['alt']; ?>" class="white-logo" />
-					<div class="portfolio-content">
-						<img src="<?php echo $logo['url']; ?>" alt="<?php echo $logo['alt']; ?>" class="color-logo"/>
-					</div>
-					
->>>>>>> origin/master
 				</a>
 			
 			<?php endforeach; ?>

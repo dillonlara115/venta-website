@@ -42,15 +42,13 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 html {
   box-sizing: border-box; }
 
-*,
-*::after,
-*::before {
+*, *::after, *::before {
   box-sizing: inherit; }
 
 .hp-header.hp-header-portfolio {
   position: relative;
   padding: 120px 0; }
-  @media screen and (max-width: 48em) {
+  @media screen and (max-width: 48em)  {
     .hp-header.hp-header-portfolio {
       padding: 20px; } }
   .hp-header.hp-header-portfolio:after {
@@ -61,7 +59,7 @@ html {
     right: 0;
     top: 0;
     bottom: 0; }
-  @media screen and (max-width: 48em) {
+  @media screen and (max-width: 48em)  {
     .hp-header.hp-header-portfolio .container {
       padding: 0 1em; } }
 
@@ -83,7 +81,7 @@ html {
   line-height: 1.4;
   font-style: italic;
   -webkit-font-smoothing: antialiased; }
-  @media screen and (max-width: 48em) {
+  @media screen and (max-width: 48em)  {
     .portfolio-tagline {
       font-size: 1.1em; } }
 
@@ -100,7 +98,7 @@ html {
 
 .portfolio-device-image {
   padding: 3em 9em; }
-  @media screen and (max-width: 48em) {
+  @media screen and (max-width: 48em)  {
     .portfolio-device-image {
       padding: 3em; } }
   .portfolio-device-image img {
@@ -116,7 +114,7 @@ html {
     padding-left: 2em; }
   .portfolio-summary li {
     list-style-type: disc; }
-  @media screen and (max-width: 48em) {
+  @media screen and (max-width: 48em)  {
     .portfolio-summary {
       padding: 0 10px; } }
 
@@ -136,8 +134,7 @@ html {
   position: relative;
   z-index: 1; }
 
-.cl-effect-18 a::before,
-.cl-effect-18 a::after {
+.cl-effect-18 a::before, .cl-effect-18 a::after {
   position: absolute;
   width: 100%;
   left: 0;
@@ -162,24 +159,18 @@ html {
   -moz-transform: translateY(20px);
   transform: translateY(20px); }
 
-.cl-effect-18 a:hover,
-.cl-effect-18 a:focus {
+.cl-effect-18 a:hover, .cl-effect-18 a:focus {
   color: #669600; }
 
-.cl-effect-18 a:hover::before,
-.cl-effect-18 a:hover::after,
-.cl-effect-18 a:focus::before,
-.cl-effect-18 a:focus::after {
+.cl-effect-18 a:hover::before, .cl-effect-18 a:hover::after, .cl-effect-18 a:focus::before, .cl-effect-18 a:focus::after {
   opacity: 0.7; }
 
-.cl-effect-18 a:hover::before,
-.cl-effect-18 a:focus::before {
+.cl-effect-18 a:hover::before, .cl-effect-18 a:focus::before {
   -webkit-transform: rotate(45deg);
   -moz-transform: rotate(45deg);
   transform: rotate(45deg); }
 
-.cl-effect-18 a:hover::after,
-.cl-effect-18 a:focus::after {
+.cl-effect-18 a:hover::after, .cl-effect-18 a:focus::after {
   -webkit-transform: rotate(-45deg);
   -moz-transform: rotate(-45deg);
   transform: rotate(-45deg); }
@@ -232,10 +223,10 @@ html {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box; }
-  @media screen and (max-width: 56em) {
+  @media screen and (max-width: 56em)  {
     .team-member {
       width: 30%; } }
-  @media screen and (max-width: 48em) {
+  @media screen and (max-width: 48em)  {
     .team-member {
       width: 300px; } }
   .team-member:after {
@@ -297,7 +288,7 @@ html {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box; }
-  @media screen and (max-width: 60em) {
+  @media screen and (max-width: 60em)  {
     .contact-widget {
       width: 100%;
       padding: .5em; } }
@@ -305,7 +296,7 @@ html {
     background-color: rgba(238, 238, 238, 0.75);
     border: 1px solid rgba(204, 204, 204, 0.3);
     width: 100%; }
-    @media screen and (min-width: 60em) {
+    @media screen and (min-width: 60em)  {
       .contact-widget .gform_wrapper .top_label input.medium, .contact-widget .gform_wrapper textarea.medium {
         min-width: 300px;
         width: 80%; } }
@@ -324,7 +315,7 @@ html {
     -webkit-transition: all 250ms ease;
     -moz-transition: all 250ms ease;
     transition: all 250ms ease; }
-    @media screen and (min-width: 60em) {
+    @media screen and (min-width: 60em)  {
       .contact-widget .gform_wrapper .gform_footer input.button, .contact-widget .gform_wrapper .gform_footer input[type=submit] {
         min-width: 300px;
         width: 80%; } }
@@ -343,13 +334,13 @@ img.logo {
   padding: 10px;
   float: left;
   margin: 0; }
-  @media screen and (max-width: 480px) {
+  @media screen and (max-width: 480px)  {
     img.logo.desktop {
       display: none; } }
-  @media screen and (max-width: 480px) {
+  @media screen and (max-width: 480px)  {
     img.logo {
       height: 70px; } }
-  @media screen and (min-width: 480px) {
+  @media screen and (min-width: 480px)  {
     img.logo.mobile {
       display: none; } }
 
@@ -358,8 +349,8 @@ img.logo {
   height: auto;
   z-index: 9999;
   background-color: rgba(102, 150, 0, 0.95);
-  padding: 0.3em 5em; }
-  @media screen and (max-width: 48em) {
+  padding: .3em 5em; }
+  @media screen and (max-width: 48em)  {
     .header-top .desktop .menu-main-menu-container {
       display: none; } }
   .header-top .desktop .menu-main-menu-container ul {
@@ -378,7 +369,7 @@ img.logo {
           color: #000; }
 
 .header-top {
-  transition: all 0.4s ease;
+  transition: all .4s ease;
   z-index: 99;
   position: fixed;
   backface-visibility: hidden;
@@ -388,7 +379,7 @@ img.logo {
       position: absolute;
       display: inline-block;
       padding: .5em; } }
-  @media screen and (min-width: 48em) {
+  @media screen and (min-width: 48em)  {
     .header-top.sticky {
       background-color: rgba(0, 0, 0, 0.95) !important;
       -webkit-transform: translateY(-11%);
@@ -417,10 +408,10 @@ img.logo {
   height: 50px;
   overflow: hidden;
   color: #fff; }
-  @media screen and (min-width: 480px) {
+  @media screen and (min-width: 480px)  {
     #simple-menu {
       top: .2em; } }
-  @media screen and (min-width: 48em) {
+  @media screen and (min-width: 48em)  {
     #simple-menu {
       display: none; } }
 
@@ -481,11 +472,11 @@ img.logo {
         left: -9999px;
         top: 70px;
         opacity: 0;
-        -webkit-transition: opacity 0.3s ease, top 0.25s ease;
-        -moz-transition: opacity 0.3s ease, top 0.25s ease;
-        -ms-transition: opacity 0.3s ease, top 0.25s ease;
-        -o-transition: opacity 0.3s ease, top 0.25s ease;
-        transition: opacity 0.3s ease, top 0.25s ease;
+        -webkit-transition: opacity .3s ease, top .25s ease;
+        -moz-transition: opacity .3s ease, top .25s ease;
+        -ms-transition: opacity .3s ease, top .25s ease;
+        -o-transition: opacity .3s ease, top .25s ease;
+        transition: opacity .3s ease, top .25s ease;
         z-index: 1000; }
         .menu-main-menu-container ul ul ul {
           top: 37px;
@@ -500,7 +491,7 @@ img.logo {
       .menu-main-menu-container > ul > li {
         display: inline-block;
         position: relative;
-        margin: 0 0.8em; }
+        margin: 0 .8em; }
         .menu-main-menu-container > ul > li > a {
           padding: 10px 10px;
           -webkit-transition: color 0.35s ease-out;
@@ -581,18 +572,17 @@ img.logo {
     color: #fff;
     background: #000;
     text-align: left;
-    -webkit-transition: all 0.35s ease;
-    -moz-transition: all 0.35s ease;
-    -ms-transition: all 0.35s ease;
-    -o-transition: all 0.35s ease;
-    transition: all 0.35s ease; }
+    -webkit-transition: all .35s ease;
+    -moz-transition: all .35s ease;
+    -ms-transition: all .35s ease;
+    -o-transition: all .35s ease;
+    transition: all .35s ease; }
   .menu-main-menu-containeralign-right .sub-menu li a {
     text-align: right; }
   .menu-main-menu-container .sub-menu li:hover > a {
     background: #f2f2f2;
     color: black; }
-  .menu-main-menu-container .sub-menu li:last-child > a,
-  .menu-main-menu-container .sub-menu li.last > a {
+  .menu-main-menu-container .sub-menu li:last-child > a, .menu-main-menu-container .sub-menu li.last > a {
     border-bottom: 0; }
   .menu-main-menu-container.align-right > ul > li > ul::after {
     left: auto;
@@ -602,10 +592,10 @@ img.logo {
     border-left-color: #9ea2a5;
     right: 10px;
     top: 12px;
-    -moz-transition: all 0.2s ease;
-    -ms-transition: all 0.2s ease;
-    -o-transition: all 0.2s ease;
-    transition: all 0.2s ease;
+    -moz-transition: all .2s ease;
+    -ms-transition: all .2s ease;
+    -o-transition: all .2s ease;
+    transition: all .2s ease;
     -webkit-transition: -webkit-transform 0.2s ease, right 0.2s ease; }
   .menu-main-menu-container.align-right .sub-menu li.has-sub::after {
     border-left-color: transparent;
@@ -632,78 +622,75 @@ img.logo {
 
 /* = Footer
 ----------------------------------------------- */
-.footer.test .footer-top {
-  position: relative;
-  display: block;
-  width: 100%;
-  height: 600px;
-  min-height: 600px;
-  max-height: 600px;
-  background-image: url(/wp-content/uploads/2015/06/footer-bg-venta.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  padding-top: 100px; }
-  @media screen and (max-width: 48em) {
-    .footer.test .footer-top {
-      padding: 20px 0;
-      background-image: url(/wp-content/uploads/2015/06/foot-bg-mobile-venta.jpg); } }
-
-.footer.test .location {
-  width: 250px;
-  height: 250px;
-  border-radius: 50%;
-  background-color: rgba(102, 150, 0, 0.9);
-  text-align: center;
-  vertical-align: center;
-  padding: 45px 0 0 0;
-  -webkit-transition: background-color 250ms ease;
-  -moz-transition: background-color 250ms ease;
-  transition: background-color 250ms ease; }
-  .footer.test .location h3 {
-    color: #fff; }
-
-.footer.test .columbia {
-  padding: 0 0 0 20%;
-  margin: 0 auto; }
-  @media screen and (max-width: 48em) {
-    .footer.test .columbia {
-      margin: 0 auto 4em;
-      padding: 0; } }
-
-.footer.test .denver {
-  padding: 0 0 0 66%;
-  margin: -50px auto 0 auto; }
-  @media screen and (max-width: 48em) {
-    .footer.test .denver {
-      margin: 0 auto;
-      padding: 0; } }
-
-.footer.test .columbia, .footer.test .denver {
-  position: relative;
-  display: block;
-  width: 100%;
-  height: auto;
-  border: 0; }
-  @media screen and (max-width: 48em) {
-    .footer.test .columbia, .footer.test .denver {
-      width: 260px; } }
-
-.footer.test .footer-bottom {
-  position: relative;
-  display: block;
-  width: 100%;
-  height: auto;
-  min-height: 100px;
-  background-color: #000;
-  margin: 0 auto;
-  padding: 1em; }
-  .footer.test .footer-bottom .social-media {
-    text-align: center; }
-    .footer.test .footer-bottom .social-media a {
-      margin: .5em; }
-  .footer.test .footer-bottom .menu-main-menu-container > ul {
-    float: none; }
+.footer.test {
+  z-index: 5; }
+  .footer.test .footer-top {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 600px;
+    min-height: 600px;
+    max-height: 600px;
+    background-image: url(/wp-content/uploads/2015/06/footer-bg-venta.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding-top: 100px; }
+    @media screen and (max-width: 48em)  {
+      .footer.test .footer-top {
+        padding: 20px 0;
+        background-image: url(/wp-content/uploads/2015/06/foot-bg-mobile-venta.jpg); } }
+  .footer.test .location {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    background-color: rgba(102, 150, 0, 0.9);
+    text-align: center;
+    vertical-align: center;
+    padding: 45px 0 0 0;
+    -webkit-transition: background-color 250ms ease;
+    -moz-transition: background-color 250ms ease;
+    transition: background-color 250ms ease; }
+    .footer.test .location h3 {
+      color: #fff; }
+  .footer.test .columbia {
+    padding: 0 0 0 20%;
+    margin: 0 auto; }
+    @media screen and (max-width: 48em)  {
+      .footer.test .columbia {
+        margin: 0 auto 4em;
+        padding: 0; } }
+  .footer.test .denver {
+    padding: 0 0 0 66%;
+    margin: -50px auto 0 auto; }
+    @media screen and (max-width: 48em)  {
+      .footer.test .denver {
+        margin: 0 auto;
+        padding: 0; } }
+  .footer.test .columbia, .footer.test .denver {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: auto;
+    border: 0; }
+    @media screen and (max-width: 48em)  {
+      .footer.test .columbia, .footer.test .denver {
+        width: 260px; } }
+  .footer.test .footer-bottom {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: auto;
+    min-height: 100px;
+    background-color: #000;
+    margin: 0 auto;
+    padding: 1em; }
+    .footer.test .footer-bottom .social-media {
+      text-align: center; }
+      .footer.test .footer-bottom .social-media a {
+        margin: .5em; }
+    .footer.test .footer-bottom .menu-main-menu-container > ul {
+      float: none; }
 
 .footer {
   clear: both;
@@ -825,20 +812,20 @@ iframe[name='google_conversion_frame'] {
 
 @font-face {
   font-family: 'venta';
-  src: url("/wp-content/themes/venta-marketing/fonts/venta.eot?9yuwk8");
-  src: url("/wp-content/themes/venta-marketing/fonts/venta.eot?#iefix9yuwk8") format("embedded-opentype"), url("/wp-content/themes/venta-marketing/fonts/venta.woff?9yuwk8") format("woff"), url("/wp-content/themes/venta-marketing/fonts/venta.ttf?9yuwk8") format("truetype"), url("/wp-content/themes/venta-marketing/fonts/venta.svg?9yuwk8#venta") format("svg");
+  src: url('/wp-content/themes/venta-marketing/fonts/venta.eot?9yuwk8');
+  src: url('/wp-content/themes/venta-marketing/fonts/venta.eot?#iefix9yuwk8') format('embedded-opentype'), url('/wp-content/themes/venta-marketing/fonts/venta.woff?9yuwk8') format('woff'), url('/wp-content/themes/venta-marketing/fonts/venta.ttf?9yuwk8') format('truetype'), url('/wp-content/themes/venta-marketing/fonts/venta.svg?9yuwk8#venta') format('svg');
   font-weight: normal;
   font-style: normal; }
 
 @font-face {
   font-family: 'Langdon';
-  src: url("/wp-content/themes/venta-marketing/fonts/Langdon.otf");
+  src: url('/wp-content/themes/venta-marketing/fonts/Langdon.otf');
   font-weight: normal;
   font-style: normal; }
 
 @font-face {
   font-family: 'gist';
-  src: url("/wp-content/themes/venta-marketing/fonts/gist.otf");
+  src: url('/wp-content/themes/venta-marketing/fonts/gist.otf');
   font-weight: normal;
   font-style: normal; }
 
@@ -903,7 +890,7 @@ iframe[name='google_conversion_frame'] {
 .main-content {
   width: 68%;
   float: left; }
-  @media screen and (max-width: 60em) {
+  @media screen and (max-width: 60em)  {
     .main-content {
       width: 100%;
       padding: 0 1em; } }
@@ -922,10 +909,8 @@ iframe[name='google_conversion_frame'] {
 
 .portfolio.denver-portfolio {
   padding: 40px 0 0; }
-
 .portfolio.main-portfolio {
   padding: 0; }
-
 .portfolio.denver-portfolio, .portfolio.main-portfolio {
   display: -webkit-box;
   display: -moz-box;
@@ -977,18 +962,10 @@ iframe[name='google_conversion_frame'] {
     .portfolio.denver-portfolio .portfolio-image img, .portfolio.main-portfolio .portfolio-image img {
       width: 100%; }
 
-<<<<<<< HEAD
-/* line 210, /Users/dillonlara/Sites/venta-marketing/sass/style.scss */
-=======
->>>>>>> origin/master
 .content-bg {
   background: #fff;
   position: relative; }
 
-<<<<<<< HEAD
-/* line 215, /Users/dillonlara/Sites/venta-marketing/sass/style.scss */
-=======
->>>>>>> origin/master
 .container {
   position: relative;
   max-width: 960px;
@@ -997,52 +974,22 @@ iframe[name='google_conversion_frame'] {
   margin: 0 auto;
   padding: 1em 0 0; }
 
-<<<<<<< HEAD
-/* line 224, /Users/dillonlara/Sites/venta-marketing/sass/style.scss */
 .white-logo, .color-logo {
   position: absolute;
   top: 0;
   padding: 20%; }
 
 /* portfolio sections */
-/* line 231, /Users/dillonlara/Sites/venta-marketing/sass/style.scss */
-=======
-.white-logo, .color-logo {
-  position: absolute;
-  top: 0;
-  padding: 60px; }
-
-/* portfolio sections */
->>>>>>> origin/master
 .portfolio-item {
   margin: 0;
   border: 0;
   display: inline-block;
   position: relative;
-<<<<<<< HEAD
+  -webkit-flex: 4 25%;
   flex: 4 25%;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box; }
-  /* line 238, /Users/dillonlara/Sites/venta-marketing/sass/style.scss */
-=======
-  -webkit-flex-grow: 1;
-  flex-grow: 1;
-  -webkit-flex-wrap: wrap;
-  width: 300px;
-  -webkit-box-align: stretch;
-  -moz-box-align: stretch;
-  box-align: stretch;
-  -webkit-align-items: stretch;
-  -moz-align-items: stretch;
-  -ms-align-items: stretch;
-  -o-align-items: stretch;
-  align-items: stretch;
-  -ms-flex-align: stretch;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box; }
->>>>>>> origin/master
   .portfolio-item img {
     width: 100%;
     display: -webkit-box;
@@ -1052,13 +999,10 @@ iframe[name='google_conversion_frame'] {
     display: -moz-flex;
     display: -ms-flexbox;
     display: flex; }
-<<<<<<< HEAD
-  /* line 242, /Users/dillonlara/Sites/venta-marketing/sass/style.scss */
   .portfolio-item .main-portfolio-image {
     -webkit-transition: opacity 250ms ease;
     -moz-transition: opacity 250ms ease;
     transition: opacity 250ms ease; }
-  /* line 246, /Users/dillonlara/Sites/venta-marketing/sass/style.scss */
   .portfolio-item:hover .main-portfolio-image {
     opacity: .8; }
   @media (max-width: 48em) {
@@ -1068,73 +1012,14 @@ iframe[name='google_conversion_frame'] {
     .portfolio-item {
       flex: 1 100%; } }
 
-/* line 260, /Users/dillonlara/Sites/venta-marketing/sass/style.scss */
-=======
-  .portfolio-item .portfolio-content {
-    bottom: 200px;
-    opacity: 0;
-    z-index: 9;
-    width: 100%;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-    -webkit-transition: all 250ms ease;
-    -moz-transition: all 250ms ease;
-    transition: all 250ms ease; }
-    .portfolio-item .portfolio-content p {
-      color: #fff;
-      font-size: 1.2em; }
-    .portfolio-item .portfolio-content h3 {
-      font-size: 3em;
-      line-height: 1.2;
-      letter-spacing: 2px;
-      color: #fff; }
-  .portfolio-item .background {
-    background: rgba(0, 0, 0, 0.6);
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    width: 100%;
-    height: 100%;
-    opacity: 0;
-    -webkit-transition: all 250ms ease;
-    -moz-transition: all 250ms ease;
-    transition: all 250ms ease; }
-  .portfolio-item:hover .background {
-    opacity: 1; }
-  .portfolio-item:hover .portfolio-content {
-    bottom: 20%;
-    opacity: 1; }
-    @media screen and (max-width: 60em) {
-      .portfolio-item:hover .portfolio-content {
-        bottom: 40px; } }
-
->>>>>>> origin/master
 h1, h2, h3, h4, h5, h6 {
   font-size: 26px;
   color: #669600;
-  font-family: "Oswald", sans-serif;
+  font-family: 'Oswald', sans-serif;
   font-weight: 400;
   margin: 0 0 15px;
   letter-spacing: 1px; }
 
-<<<<<<< HEAD
-/* line 269, /Users/dillonlara/Sites/venta-marketing/sass/style.scss */
-h3 {
-  font-size: 1.4em; }
-
-/* line 273, /Users/dillonlara/Sites/venta-marketing/sass/style.scss */
-p {
-  margin: 0 0 15px; }
-
-/* line 277, /Users/dillonlara/Sites/venta-marketing/sass/style.scss */
-strong {
-  font-weight: 900; }
-
-/* line 281, /Users/dillonlara/Sites/venta-marketing/sass/style.scss */
-=======
 h3 {
   font-size: 1.4em; }
 
@@ -1144,46 +1029,26 @@ p {
 strong {
   font-weight: 900; }
 
->>>>>>> origin/master
 em {
   font-style: italic; }
 
 /* denver page */
-<<<<<<< HEAD
-/* line 285, /Users/dillonlara/Sites/venta-marketing/sass/style.scss */
-=======
->>>>>>> origin/master
 .denver-content {
   max-width: 1000px;
   margin: 0 auto;
   padding: 3em 0 0; }
-<<<<<<< HEAD
-  /* line 289, /Users/dillonlara/Sites/venta-marketing/sass/style.scss */
   .denver-content .main-content {
     margin-bottom: 3em; }
 
-/* line 294, /Users/dillonlara/Sites/venta-marketing/sass/style.scss */
-=======
-  .denver-content .main-content {
-    margin-bottom: 3em; }
-
->>>>>>> origin/master
 .certification-image {
   max-width: 90px;
   margin: .5em; }
-  @media screen and (max-width: 60em) {
+  @media screen and (max-width: 60em)  {
     .certification-image {
       max-width: 100px; } }
 
-<<<<<<< HEAD
-/* line 304, /Users/dillonlara/Sites/venta-marketing/sass/style.scss */
 .services {
   margin-top: 3em; }
-  /* line 306, /Users/dillonlara/Sites/venta-marketing/sass/style.scss */
-=======
-.services {
-  margin-top: 3em; }
->>>>>>> origin/master
   .services .container {
     display: -webkit-box;
     display: -moz-box;
@@ -1213,10 +1078,6 @@ em {
     -ms-flex-align: stretch;
     -webkit-flex-wrap: wrap;
     flex-wrap: wrap; }
-<<<<<<< HEAD
-    /* line 312, /Users/dillonlara/Sites/venta-marketing/sass/style.scss */
-=======
->>>>>>> origin/master
     .services .container .item {
       margin: 0;
       border: 0;
@@ -1237,10 +1098,6 @@ em {
       -webkit-box-sizing: border-box;
       -moz-box-sizing: border-box;
       box-sizing: border-box; }
-<<<<<<< HEAD
-      /* line 322, /Users/dillonlara/Sites/venta-marketing/sass/style.scss */
-=======
->>>>>>> origin/master
       .services .container .item i {
         font-size: 7em;
         display: block;
@@ -1253,10 +1110,6 @@ em {
 ----------------------------------------------- */
 /* =Video
 ----------------------------------------------- */
-<<<<<<< HEAD
-/* line 341, /Users/dillonlara/Sites/venta-marketing/sass/style.scss */
-=======
->>>>>>> origin/master
 video {
   min-width: 100%;
   width: auto;
@@ -1269,23 +1122,19 @@ video {
   z-index: 0;
   overflow: auto;
   display: block; }
-  @media screen and (max-width: 48em) {
+  @media screen and (max-width: 48em)  {
     video {
       display: none; } }
 
-<<<<<<< HEAD
-/* line 358, /Users/dillonlara/Sites/venta-marketing/sass/style.scss */
-=======
->>>>>>> origin/master
+/*safari hack for html video issue */
+_::-webkit-full-page-media, _:future, :root video {
+  position: absolute; }
+
 .hp-header {
   width: 100%;
   margin: 0;
   padding: 200px 0 100px; }
 
-<<<<<<< HEAD
-/* line 364, /Users/dillonlara/Sites/venta-marketing/sass/style.scss */
-=======
->>>>>>> origin/master
 .hp-headline {
   text-align: center;
   color: #fff;
@@ -1295,10 +1144,6 @@ video {
   font-weight: 400;
   text-transform: uppercase; }
 
-<<<<<<< HEAD
-/* line 375, /Users/dillonlara/Sites/venta-marketing/sass/style.scss */
-=======
->>>>>>> origin/master
 h2.hp-headline {
   text-align: center;
   color: #fff;
@@ -1310,10 +1155,6 @@ h2.hp-headline {
   font-style: italic;
   text-transform: lowercase; }
 
-<<<<<<< HEAD
-/* line 387, /Users/dillonlara/Sites/venta-marketing/sass/style.scss */
-=======
->>>>>>> origin/master
 p.hp-cta {
   margin: 20px 0;
   font-weight: 300;
@@ -1321,73 +1162,41 @@ p.hp-cta {
   text-align: center;
   display: none; }
 
-<<<<<<< HEAD
-/* line 395, /Users/dillonlara/Sites/venta-marketing/sass/style.scss */
-=======
->>>>>>> origin/master
 p.hp-cta a {
   color: #fff;
   padding: 10px 20px;
   border: 2px solid #fff; }
 
-<<<<<<< HEAD
-/* line 401, /Users/dillonlara/Sites/venta-marketing/sass/style.scss */
-=======
->>>>>>> origin/master
 p.hp-cta a:hover {
   color: #fff;
   background: #000;
   border-color: #000; }
 
-<<<<<<< HEAD
-/* line 407, /Users/dillonlara/Sites/venta-marketing/sass/style.scss */
-=======
->>>>>>> origin/master
 .home-content {
   padding: 40px 0 0;
   background: #fff; }
 
-<<<<<<< HEAD
-/* line 413, /Users/dillonlara/Sites/venta-marketing/sass/style.scss */
-=======
->>>>>>> origin/master
 #hp-body-content {
   float: left;
   width: 50%;
   padding: 0 10px; }
 
-<<<<<<< HEAD
-/* line 419, /Users/dillonlara/Sites/venta-marketing/sass/style.scss */
-=======
->>>>>>> origin/master
 #hp-body-content h2 {
   color: #818285;
   border-bottom: 6px solid #669600;
   padding: 0 0 5px; }
 
-<<<<<<< HEAD
-/* line 425, /Users/dillonlara/Sites/venta-marketing/sass/style.scss */
-=======
->>>>>>> origin/master
 #hp-body-img {
   float: right;
   width: 45%;
   padding: 10px 0 0; }
 
-<<<<<<< HEAD
-/* line 431, /Users/dillonlara/Sites/venta-marketing/sass/style.scss */
-=======
->>>>>>> origin/master
 #hp-body-img img {
   width: 100%;
   margin: 0;
   padding: 0;
   display: block; }
 
-<<<<<<< HEAD
-/* line 438, /Users/dillonlara/Sites/venta-marketing/sass/style.scss */
-=======
->>>>>>> origin/master
 #hp-testimonials {
   background: #000;
   position: relative;
@@ -1395,136 +1204,73 @@ p.hp-cta a:hover {
   text-align: center;
   color: #fff; }
 
-<<<<<<< HEAD
-/* line 446, /Users/dillonlara/Sites/venta-marketing/sass/style.scss */
-=======
->>>>>>> origin/master
 #hp-testimonials p {
   font-size: 14px;
   font-style: italic; }
 
-<<<<<<< HEAD
-/* line 451, /Users/dillonlara/Sites/venta-marketing/sass/style.scss */
-=======
->>>>>>> origin/master
 #hp-testimonials p#name {
   font-size: 16px;
   font-style: normal; }
 
-<<<<<<< HEAD
-/* line 456, /Users/dillonlara/Sites/venta-marketing/sass/style.scss */
 #hp-testimonials p#name span {
   font-weight: 700; }
 
-/* line 460, /Users/dillonlara/Sites/venta-marketing/sass/style.scss */
-=======
-#hp-testimonials p#name span {
-  font-weight: 700; }
-
->>>>>>> origin/master
 #hp-testimonials img {
   width: 80px;
   margin: 10px auto; }
 
-<<<<<<< HEAD
-/* line 465, /Users/dillonlara/Sites/venta-marketing/sass/style.scss */
 #hp-people {
   padding: 40px 0; }
 
-/* line 469, /Users/dillonlara/Sites/venta-marketing/sass/style.scss */
-=======
-#hp-people {
-  padding: 40px 0; }
-
->>>>>>> origin/master
 #hp-people #people-text {
   float: left;
   width: 30%;
   margin: 10px 0; }
 
-<<<<<<< HEAD
-/* line 475, /Users/dillonlara/Sites/venta-marketing/sass/style.scss */
-=======
->>>>>>> origin/master
 #hp-people #people-text h2 {
   color: #818285;
   border-bottom: 6px solid #669600;
   padding-bottom: 5px; }
 
-<<<<<<< HEAD
-/* line 481, /Users/dillonlara/Sites/venta-marketing/sass/style.scss */
-=======
->>>>>>> origin/master
 #hp-people #hp-team {
   float: right;
   width: 60%;
   margin-left: 2.5%; }
 
-<<<<<<< HEAD
-/* line 487, /Users/dillonlara/Sites/venta-marketing/sass/style.scss */
 #hp-people #hp-team img {
   width: 100%; }
 
-/* line 491, /Users/dillonlara/Sites/venta-marketing/sass/style.scss */
-=======
-#hp-people #hp-team img {
-  width: 100%; }
-
->>>>>>> origin/master
 #hp-people a {
   padding: 6px 10px;
   border: 1px solid #669600;
   color: #669600;
   font-size: 14px; }
 
-<<<<<<< HEAD
-/* line 498, /Users/dillonlara/Sites/venta-marketing/sass/style.scss */
-=======
->>>>>>> origin/master
 #hp-people a:hover {
   color: #fff;
   background: #669600; }
 
-<<<<<<< HEAD
-/* line 503, /Users/dillonlara/Sites/venta-marketing/sass/style.scss */
-=======
->>>>>>> origin/master
 .portfolio {
   width: 100%;
   background: #000;
   background: none;
   padding: 40px 0 80px;
   text-align: center; }
-<<<<<<< HEAD
-  /* line 509, /Users/dillonlara/Sites/venta-marketing/sass/style.scss */
-=======
->>>>>>> origin/master
   .portfolio h2 {
     color: #fff;
     text-align: center;
     padding: 20px 0;
     font-size: 34px; }
 
-<<<<<<< HEAD
-/* line 517, /Users/dillonlara/Sites/venta-marketing/sass/style.scss */
 #hp-portfolio {
   background: rgba(0, 0, 0, 0.55);
-  position: relative; }
-  /* line 520, /Users/dillonlara/Sites/venta-marketing/sass/style.scss */
-=======
-#hp-portfolio {
-  background: rgba(0, 0, 0, 0.55);
-  position: relative; }
->>>>>>> origin/master
+  position: relative;
+  z-index: 5; }
   #hp-portfolio h2 {
     color: #fff;
     margin: 1em 0;
     font-size: 2.5em; }
 
-<<<<<<< HEAD
-/* line 526, /Users/dillonlara/Sites/venta-marketing/sass/style.scss */
-=======
->>>>>>> origin/master
 #hp-portfolio .img {
   width: 30%;
   margin: 20px 1.5%;
@@ -1533,10 +1279,6 @@ p.hp-cta a:hover {
   border: 1px solid #fff;
   background: #818285; }
 
-<<<<<<< HEAD
-/* line 535, /Users/dillonlara/Sites/venta-marketing/sass/style.scss */
-=======
->>>>>>> origin/master
 #hp-portfolio .img img {
   width: 100%;
   opacity: .6;
@@ -1544,106 +1286,49 @@ p.hp-cta a:hover {
   padding: 0;
   display: block; }
 
-<<<<<<< HEAD
-/* line 543, /Users/dillonlara/Sites/venta-marketing/sass/style.scss */
-#hp-portfolio .img img:hover {
-  opacity: 1; }
-
-/* line 547, /Users/dillonlara/Sites/venta-marketing/sass/style.scss */
-#hp-services {
-  background: rgba(0, 0, 0, 0.7);
-  position: relative; }
-  /* line 550, /Users/dillonlara/Sites/venta-marketing/sass/style.scss */
-=======
 #hp-portfolio .img img:hover {
   opacity: 1; }
 
 #hp-services {
   background: rgba(0, 0, 0, 0.7);
-  position: relative; }
->>>>>>> origin/master
+  position: relative;
+  z-index: 5; }
   #hp-services h2 {
     color: #fff;
     text-align: center;
     margin: 20px 0 0;
     padding-bottom: 5px; }
-<<<<<<< HEAD
-  /* line 556, /Users/dillonlara/Sites/venta-marketing/sass/style.scss */
   #hp-services .container {
     padding: 60px 0; }
-  /* line 559, /Users/dillonlara/Sites/venta-marketing/sass/style.scss */
-=======
-  #hp-services .container {
-    padding: 60px 0; }
->>>>>>> origin/master
   #hp-services p {
     margin: 0;
     padding: 20px;
     text-align: center;
     color: #fff; }
-<<<<<<< HEAD
-  /* line 565, /Users/dillonlara/Sites/venta-marketing/sass/style.scss */
-=======
->>>>>>> origin/master
   #hp-services a {
     color: #669600;
     border: 1px solid #669600;
     padding: 6px 10px; }
-<<<<<<< HEAD
-    /* line 569, /Users/dillonlara/Sites/venta-marketing/sass/style.scss */
-=======
->>>>>>> origin/master
     #hp-services a:hover {
       background: #669600;
       color: #000; }
 
-<<<<<<< HEAD
-/* line 576, /Users/dillonlara/Sites/venta-marketing/sass/style.scss */
-=======
->>>>>>> origin/master
 .step {
   float: left;
   width: 25%;
   margin: 0;
   background: #000;
   text-align: center; }
-<<<<<<< HEAD
-  /* line 582, /Users/dillonlara/Sites/venta-marketing/sass/style.scss */
-=======
->>>>>>> origin/master
   .step h3 {
     padding: 200px 0;
     color: #fff; }
 
-<<<<<<< HEAD
-/* line 589, /Users/dillonlara/Sites/venta-marketing/sass/style.scss */
-=======
->>>>>>> origin/master
 .one, .two, .three, .four {
   margin: 0;
   padding: 0;
   display: inline-block;
   position: relative !important; }
 
-<<<<<<< HEAD
-/* line 596, /Users/dillonlara/Sites/venta-marketing/sass/style.scss */
-.one {
-  background: url(/wp-content/uploads/2014/08/web-design-hp-steps.jpg) no-repeat center center; }
-
-/* line 600, /Users/dillonlara/Sites/venta-marketing/sass/style.scss */
-.two {
-  background: url(/wp-content/uploads/2014/08/seo-hp-steps.jpg) no-repeat center center; }
-
-/* line 604, /Users/dillonlara/Sites/venta-marketing/sass/style.scss */
-.three {
-  background: url(/wp-content/uploads/2014/08/video-hp-steps.jpg) no-repeat right center; }
-
-/* line 608, /Users/dillonlara/Sites/venta-marketing/sass/style.scss */
-.four {
-  background: url(/wp-content/uploads/2014/08/design-hp-steps.jpg) no-repeat right center; }
-
-/* line 612, /Users/dillonlara/Sites/venta-marketing/sass/style.scss */
-=======
 .one {
   background: url(/wp-content/uploads/2014/08/web-design-hp-steps.jpg) no-repeat center center; }
 
@@ -1656,7 +1341,6 @@ p.hp-cta a:hover {
 .four {
   background: url(/wp-content/uploads/2014/08/design-hp-steps.jpg) no-repeat right center; }
 
->>>>>>> origin/master
 span.section-content {
   background: #669600;
   color: #fff;
@@ -1671,18 +1355,10 @@ span.section-content {
   -moz-transition: opacity 500ms;
   transition: opacity 500ms; }
 
-<<<<<<< HEAD
-/* line 627, /Users/dillonlara/Sites/venta-marketing/sass/style.scss */
-=======
->>>>>>> origin/master
 .step:hover span.section-content {
   opacity: 1;
   cursor: default; }
 
-<<<<<<< HEAD
-/* line 632, /Users/dillonlara/Sites/venta-marketing/sass/style.scss */
-=======
->>>>>>> origin/master
 span.section-content span {
   display: table-cell;
   text-align: center;
@@ -1692,10 +1368,6 @@ span.section-content span {
 
 /* = Sub Pages
 ----------------------------------------------- */
-<<<<<<< HEAD
-/* line 643, /Users/dillonlara/Sites/venta-marketing/sass/style.scss */
-=======
->>>>>>> origin/master
 .about {
   min-height: 500px;
   background: url(/wp-content/uploads/2015/05/video.png) no-repeat center center fixed;
@@ -1704,65 +1376,33 @@ span.section-content span {
   -o-background-size: cover;
   background-size: cover; }
 
-<<<<<<< HEAD
-/* line 652, /Users/dillonlara/Sites/venta-marketing/sass/style.scss */
-=======
->>>>>>> origin/master
 h1.entry-title {
   font-size: 30px;
   padding-top: 260px;
   text-align: center;
   color: #fff; }
-<<<<<<< HEAD
-  /* line 657, /Users/dillonlara/Sites/venta-marketing/sass/style.scss */
-=======
->>>>>>> origin/master
   h1.entry-title span {
     border: 1px solid #fff;
     padding: 10px 20px; }
 
-<<<<<<< HEAD
-/* line 664, /Users/dillonlara/Sites/venta-marketing/sass/style.scss */
 .entry-content {
   width: 70%;
   float: left; }
-  /* line 667, /Users/dillonlara/Sites/venta-marketing/sass/style.scss */
-=======
-.entry-content {
-  width: 70%;
-  float: left; }
->>>>>>> origin/master
   .entry-content p {
     margin: 0 0 20px; }
 
 /* = Service Page
 ----------------------------------------------- */
-<<<<<<< HEAD
-/* line 676, /Users/dillonlara/Sites/venta-marketing/sass/style.scss */
 .service {
   width: 100%;
   margin: 20px 0 60px; }
-  /* line 679, /Users/dillonlara/Sites/venta-marketing/sass/style.scss */
-=======
-.service {
-  width: 100%;
-  margin: 20px 0 60px; }
->>>>>>> origin/master
   .service img {
     float: left;
     width: 25%;
     margin: 0; }
-<<<<<<< HEAD
-  /* line 684, /Users/dillonlara/Sites/venta-marketing/sass/style.scss */
   .service .content {
     width: 65%;
     float: right; }
-  /* line 688, /Users/dillonlara/Sites/venta-marketing/sass/style.scss */
-=======
-  .service .content {
-    width: 65%;
-    float: right; }
->>>>>>> origin/master
   .service h2 {
     color: #818285;
     border-bottom: 6px solid #669600;
@@ -1770,10 +1410,6 @@ h1.entry-title {
 
 /* = Sidebar
 ----------------------------------------------- */
-<<<<<<< HEAD
-/* line 698, /Users/dillonlara/Sites/venta-marketing/sass/style.scss */
-=======
->>>>>>> origin/master
 #sidebar {
   width: 30%;
   float: right;
@@ -1784,10 +1420,6 @@ h1.entry-title {
     display: none; } }
 
 /* social media */
-<<<<<<< HEAD
-/* line 714, /Users/dillonlara/Sites/venta-marketing/sass/style.scss */
-=======
->>>>>>> origin/master
 .social-media .fa {
   font-size: 40px;
   margin: 5px 15px 0 0;
@@ -1795,26 +1427,6 @@ h1.entry-title {
   -moz-transition: all 250ms ease;
   transition: all 250ms ease; }
 
-<<<<<<< HEAD
-/* line 720, /Users/dillonlara/Sites/venta-marketing/sass/style.scss */
-.fa-google-plus-square {
-  color: #de4930; }
-  /* line 722, /Users/dillonlara/Sites/venta-marketing/sass/style.scss */
-  .fa-google-plus-square:hover {
-    color: #ec9688; }
-
-/* line 726, /Users/dillonlara/Sites/venta-marketing/sass/style.scss */
-.fa-facebook-official {
-  color: #2d4488; }
-  /* line 728, /Users/dillonlara/Sites/venta-marketing/sass/style.scss */
-  .fa-facebook-official:hover {
-    color: #5471c7; }
-
-/* line 732, /Users/dillonlara/Sites/venta-marketing/sass/style.scss */
-.fa-twitter-square {
-  color: #1a8cd5; }
-  /* line 734, /Users/dillonlara/Sites/venta-marketing/sass/style.scss */
-=======
 .fa-google-plus-square {
   color: #de4930; }
   .fa-google-plus-square:hover {
@@ -1827,57 +1439,30 @@ h1.entry-title {
 
 .fa-twitter-square {
   color: #1a8cd5; }
->>>>>>> origin/master
   .fa-twitter-square:hover {
     color: #68b9ed; }
 
 /* = New Styles
 ----------------------------------------------- */
-<<<<<<< HEAD
-/* line 743, /Users/dillonlara/Sites/venta-marketing/sass/style.scss */
-=======
->>>>>>> origin/master
 .services-venta {
   width: 100%;
   margin: 20px 0; }
 
-<<<<<<< HEAD
-/* line 748, /Users/dillonlara/Sites/venta-marketing/sass/style.scss */
-=======
->>>>>>> origin/master
 .service-venta {
   width: 28.33%;
   margin: 10px 2.5%;
   float: left; }
-<<<<<<< HEAD
-  /* line 752, /Users/dillonlara/Sites/venta-marketing/sass/style.scss */
-  .service-venta .img {
-    width: 150px;
-    margin: 0 auto 10px; }
-    /* line 755, /Users/dillonlara/Sites/venta-marketing/sass/style.scss */
-    .service-venta .img img {
-      width: 100%; }
-  /* line 759, /Users/dillonlara/Sites/venta-marketing/sass/style.scss */
-=======
   .service-venta .img {
     width: 150px;
     margin: 0 auto 10px; }
     .service-venta .img img {
       width: 100%; }
->>>>>>> origin/master
   .service-venta h2 {
     color: #669600 !important;
     font-size: 20px;
     text-transform: uppercase; }
-<<<<<<< HEAD
-  /* line 765, /Users/dillonlara/Sites/venta-marketing/sass/style.scss */
   .service-venta ul {
     margin: 30px 0 10px; }
-    /* line 767, /Users/dillonlara/Sites/venta-marketing/sass/style.scss */
-=======
-  .service-venta ul {
-    margin: 30px 0 10px; }
->>>>>>> origin/master
     .service-venta ul li {
       list-style-type: none;
       text-align: center;
@@ -1886,21 +1471,6 @@ h1.entry-title {
       color: #fff;
       border-bottom: 1px solid #fff; }
 
-<<<<<<< HEAD
-/* line 780, /Users/dillonlara/Sites/venta-marketing/sass/style.scss */
-.hp-header.hp-header-portfolio {
-  padding: 180px 0 60px; }
-
-/* line 784, /Users/dillonlara/Sites/venta-marketing/sass/style.scss */
-#hp-testimonials {
-  padding: 40px; }
-
-/* line 788, /Users/dillonlara/Sites/venta-marketing/sass/style.scss */
-#hp-portfolio {
-  background: rgba(255, 255, 255, 0.95);
-  text-align: center; }
-  /* line 791, /Users/dillonlara/Sites/venta-marketing/sass/style.scss */
-=======
 .hp-header.hp-header-portfolio {
   padding: 180px 0 60px; }
 
@@ -1910,222 +1480,105 @@ h1.entry-title {
 #hp-portfolio {
   background: rgba(255, 255, 255, 0.95);
   text-align: center; }
->>>>>>> origin/master
   #hp-portfolio h2 {
     color: #669600;
     font-size: 26px; }
 
-<<<<<<< HEAD
-/* line 797, /Users/dillonlara/Sites/venta-marketing/sass/style.scss */
-.footer.test .footer-bottom {
-  padding: 30px 0 10px; }
-
-/* line 801, /Users/dillonlara/Sites/venta-marketing/sass/style.scss */
-.footer-bottom .menu-main-menu-container {
-  margin: 10px 0 20px; }
-
-/* line 805, /Users/dillonlara/Sites/venta-marketing/sass/style.scss */
-=======
 .footer.test .footer-bottom {
   padding: 30px 0 10px; }
 
 .footer-bottom .menu-main-menu-container {
   margin: 10px 0 20px; }
 
->>>>>>> origin/master
 p.copyright {
   text-align: center;
   font-size: 12px; }
 
-<<<<<<< HEAD
-/* line 810, /Users/dillonlara/Sites/venta-marketing/sass/style.scss */
-.team-member:hover .team-member-title {
-  display: none; }
-
-/* line 814, /Users/dillonlara/Sites/venta-marketing/sass/style.scss */
-.team-member-title p {
-  margin: 0 0 5px; }
-
-/* line 818, /Users/dillonlara/Sites/venta-marketing/sass/style.scss */
-=======
 .team-member:hover .team-member-title {
   display: none; }
 
 .team-member-title p {
   margin: 0 0 5px; }
 
->>>>>>> origin/master
 .team-member-description {
   background: rgba(0, 0, 0, 0.6);
   padding: 20px;
   color: #fff; }
 
-<<<<<<< HEAD
-/* line 824, /Users/dillonlara/Sites/venta-marketing/sass/style.scss */
-=======
->>>>>>> origin/master
 .address h2 {
   font-size: 18px !important;
   margin: 0 0 5px !important; }
 
-<<<<<<< HEAD
-/* line 829, /Users/dillonlara/Sites/venta-marketing/sass/style.scss */
-=======
->>>>>>> origin/master
 img.cert {
   float: left;
   width: 90px;
   margin: 10px; }
 
-<<<<<<< HEAD
-/* line 835, /Users/dillonlara/Sites/venta-marketing/sass/style.scss */
-=======
->>>>>>> origin/master
 .body-container {
   padding: 0;
   border-top: 6px solid #690; }
 
-<<<<<<< HEAD
-/* line 840, /Users/dillonlara/Sites/venta-marketing/sass/style.scss */
-=======
->>>>>>> origin/master
 .footer-top {
   border-top: 6px solid #690; }
 
 @media only screen and (max-width: 768px) {
-<<<<<<< HEAD
-  /* line 845, /Users/dillonlara/Sites/venta-marketing/sass/style.scss */
-=======
->>>>>>> origin/master
   .service-venta {
     width: 80%;
     margin: 10px auto;
     float: none; }
-<<<<<<< HEAD
-  /* line 851, /Users/dillonlara/Sites/venta-marketing/sass/style.scss */
-=======
->>>>>>> origin/master
   .service-venta ul {
     margin: 30px; } }
 
 @media only screen and (max-width: 480px) {
-<<<<<<< HEAD
-  /* line 857, /Users/dillonlara/Sites/venta-marketing/sass/style.scss */
-=======
->>>>>>> origin/master
   .hp-header.hp-header-portfolio {
     padding: 100px 0 20px; } }
 
 /* = Responsive Media Queries
 ----------------------------------------------- */
 @media only screen and (max-width: 980px) {
-<<<<<<< HEAD
-  /* line 867, /Users/dillonlara/Sites/venta-marketing/sass/style.scss */
-=======
->>>>>>> origin/master
   #hp-body-content {
     float: none;
     width: 90%;
     padding: 0;
     margin: 0 5%; }
-<<<<<<< HEAD
-  /* line 873, /Users/dillonlara/Sites/venta-marketing/sass/style.scss */
-=======
->>>>>>> origin/master
   #hp-body-img {
     display: none; } }
 
 @media only screen and (max-width: 900px) {
-<<<<<<< HEAD
-  /* line 879, /Users/dillonlara/Sites/venta-marketing/sass/style.scss */
-=======
->>>>>>> origin/master
   .hp-headline {
     font-size: 40px; } }
 
 @media only screen and (max-width: 768px) {
-<<<<<<< HEAD
-  /* line 885, /Users/dillonlara/Sites/venta-marketing/sass/style.scss */
   .hp-header {
     padding: 100px 0 40px; }
-  /* line 889, /Users/dillonlara/Sites/venta-marketing/sass/style.scss */
-  .hp-headline {
-    font-size: 30px;
-    margin-bottom: 30px; }
-  /* line 894, /Users/dillonlara/Sites/venta-marketing/sass/style.scss */
-  h2.hp-headline {
-    font-size: 20px;
-    margin-bottom: 0; }
-  /* line 899, /Users/dillonlara/Sites/venta-marketing/sass/style.scss */
-=======
-  .hp-header {
-    padding: 60px 0 40px; }
   .hp-headline {
     font-size: 30px;
     margin-bottom: 30px; }
   h2.hp-headline {
     font-size: 20px;
     margin-bottom: 0; }
->>>>>>> origin/master
   #hp-portfolio #img {
     width: 60%;
     margin: 40px 20%;
     float: none; }
-<<<<<<< HEAD
-  /* line 905, /Users/dillonlara/Sites/venta-marketing/sass/style.scss */
-=======
->>>>>>> origin/master
   #hp-people p {
     float: none;
     width: 90%;
     margin: 20px 5% 10px; }
-<<<<<<< HEAD
-  /* line 910, /Users/dillonlara/Sites/venta-marketing/sass/style.scss */
-  .step {
-    float: none;
-    width: 100%; }
-  /* line 915, /Users/dillonlara/Sites/venta-marketing/sass/style.scss */
-  .footer #left, .footer #right {
-    display: none; }
-  /* line 919, /Users/dillonlara/Sites/venta-marketing/sass/style.scss */
-=======
   .step {
     float: none;
     width: 100%; }
   .footer #left, .footer #right {
     display: none; }
->>>>>>> origin/master
   .footer #center {
     float: none;
     width: 90%;
     padding: 20px 0;
     margin: 0 5%; }
-<<<<<<< HEAD
-  /* line 926, /Users/dillonlara/Sites/venta-marketing/sass/style.scss */
-=======
->>>>>>> origin/master
   .footer #center #center-contact {
     display: block; } }
 
 @media only screen and (max-width: 480px) {
-<<<<<<< HEAD
-  /* line 932, /Users/dillonlara/Sites/venta-marketing/sass/style.scss */
-  img.logo {
-    height: auto;
-    width: 50%; }
-  /* line 937, /Users/dillonlara/Sites/venta-marketing/sass/style.scss */
-  #navigation {
-    width: 70%; }
-  /* line 941, /Users/dillonlara/Sites/venta-marketing/sass/style.scss */
-  #navigation ul {
-    padding: 0;
-    line-height: 60px; }
-  /* line 946, /Users/dillonlara/Sites/venta-marketing/sass/style.scss */
-  .footer .nav-bottom {
-    width: 100%;
-    float: none; }
-  /* line 951, /Users/dillonlara/Sites/venta-marketing/sass/style.scss */
-=======
   img.logo {
     height: auto;
     width: 50%; }
@@ -2137,17 +1590,12 @@ img.cert {
   .footer .nav-bottom {
     width: 100%;
     float: none; }
->>>>>>> origin/master
   .nav-bottom #bucket {
     width: 90%;
     margin: 10px 5%;
     float: none; } }
 
 @media only screen and (max-width: 320px) {
-<<<<<<< HEAD
-  /* line 959, /Users/dillonlara/Sites/venta-marketing/sass/style.scss */
-=======
->>>>>>> origin/master
   #hp-portfolio #img {
     width: 80%;
     margin: 20px 10%; } }
