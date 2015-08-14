@@ -18,6 +18,7 @@ Template Name: Portfolio Landing Page
 <div class="body-container">
 	<?php 
 		$posts = get_posts(array(
+			'showposts' => 4,
 			'post_type'			=> 'portfolio',
 		));
 
@@ -27,17 +28,17 @@ Template Name: Portfolio Landing Page
 				
 			<?php foreach( $posts as $post ): 
 				
-				setup_postdata( $post )
-				
+				setup_postdata( $post );
+				$logo = get_field('logo');
+				$whiteLogo = get_field('white_logo');
 				?> 
 				<a href="<?php the_permalink(); ?>" class="portfolio-item">
 					<?php the_post_thumbnail( 'full' ); ?>
+					<img src="<?php echo $whiteLogo['url']; ?>" alt="<?php echo $whiteLogo['alt']; ?>" class="white-logo" />
 					<div class="portfolio-content">
-						<h3><?php the_title(); ?></h3>
-						<p><?php the_field('tagline') ?></p>
-						
+						<img src="<?php echo $logo['url']; ?>" alt="<?php echo $logo['alt']; ?>" class="color-logo"/>
 					</div>
-					<div class="background"></div>
+					
 				</a>
 			
 			<?php endforeach; ?>

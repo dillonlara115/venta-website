@@ -222,6 +222,12 @@ $small: em(960);
 	padding: 1em 0 0;
 }
 
+.white-logo, .color-logo {
+	position: absolute;
+	top: 0;
+	padding: 60px;
+}
+
 /* portfolio sections */
 .portfolio-item {
 	margin: 0;
@@ -231,7 +237,7 @@ $small: em(960);
 	-webkit-flex-grow: 1;
 	flex-grow: 1;
 	-webkit-flex-wrap: wrap;
-	width: 250px;
+	width: 300px;
 	@include align-items(stretch);
 	@include box-sizing(border-box);
 	img {
@@ -240,11 +246,8 @@ $small: em(960);
 	}
 	.portfolio-content {
 		bottom: 200px;
-		overflow: hidden;
 		opacity: 0;
-		position: absolute;
 		z-index: 9;
-		padding: 10px;
 		width: 100%;
 		@include box-sizing(border-box);
 		@include transition(all 250ms ease);
