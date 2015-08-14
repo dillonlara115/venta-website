@@ -222,9 +222,15 @@ $small: em(960);
 }
 
 .white-logo, .color-logo {
+<<<<<<< HEAD
     position: absolute;
     top: 0;
     padding: 20%;
+=======
+	position: absolute;
+	top: 0;
+	padding: 60px;
+>>>>>>> origin/master
 }
 
 /* portfolio sections */
@@ -233,14 +239,54 @@ $small: em(960);
 	border: 0;
 	display: inline-block;
 	position: relative;
+<<<<<<< HEAD
 	flex: 4 25%;
+=======
+	-webkit-flex-grow: 1;
+	flex-grow: 1;
+	-webkit-flex-wrap: wrap;
+	width: 300px;
+	@include align-items(stretch);
+>>>>>>> origin/master
 	@include box-sizing(border-box);
 	img {
 		width: 100%;
 		@include display(flex);
 	}
+<<<<<<< HEAD
 	.main-portfolio-image {
 		@include transition(opacity 250ms ease);
+=======
+	.portfolio-content {
+		bottom: 200px;
+		opacity: 0;
+		z-index: 9;
+		width: 100%;
+		@include box-sizing(border-box);
+		@include transition(all 250ms ease);
+		p {
+			color: #fff;
+			font-size: 1.2em;
+		}
+		h3 {
+			font-size: 3em;
+			line-height: 1.2;
+			letter-spacing: 2px;
+			color: #fff;
+		}
+	}
+	.background {
+		background: rgba(0, 0, 0, 0.6);
+		position: absolute;
+		left: 0;
+		right: 0;
+		top: 0;
+		bottom: 0;
+		width: 100%;
+		height: 100%;
+		opacity: 0;
+		@include transition(all 250ms ease);
+>>>>>>> origin/master
 	}
 	&:hover {
 		.main-portfolio-image {
