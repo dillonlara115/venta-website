@@ -1,5 +1,17 @@
 <?php get_header(); ?>
-<div id="content">
+<?php $feat_image = wp_get_attachment_url( get_post_thumbnail_id($post->ID) ); ?>
+	<div id="hp-header" class="hp-header hp-header-portfolio" style="background: url(<?php echo $feat_image ?>) no-repeat center center;background-size: cover;" >
+		<div class="container">
+			<div class="hp-headline portfolio-headline">
+				<?php echo apply_filters('the_title',get_page( get_option('page_for_posts') )->post_title); ?>
+			</div>
+			<div style="clear: both"></div>
+		</div>
+	</div>
+</div>
+
+<div class="body-container">
+	<div class="container">
 <?php global $wp_query; $total_pages = $wp_query->max_num_pages; if ( $total_pages > 1 ) { ?>
 <div id="nav-above" class="navigation">
 <p class="nav-previous"><?php next_posts_link(__( '<span class="meta-nav">&laquo;</span> older articles', 'blankslate' )) ?></p>
@@ -37,6 +49,7 @@
 <p class="nav-next"><?php previous_posts_link(__( 'newer articles <span class="meta-nav">&raquo;</span>', 'blankslate' )) ?></p>
 </div>
 <?php } ?>
+</div>
 </div>
 <?php get_sidebar(); ?>
 <?php get_footer(); ?>

@@ -43,10 +43,7 @@ get_post_comments_feed_link() ) ?>
 <?php edit_post_link( __( 'Edit', 'blankslate' ), "\n\t\t\t\t\t<span class=\"edit-link\">", "</span>" ) ?>
 </div>
 </div>
-<div id="nav-below" class="navigation">
-<p class="nav-previous"><?php previous_post_link( '%link', '<span class="meta-nav">&laquo;</span> %title' ) ?></p>
-<p class="nav-next"><?php next_post_link( '%link', '%title <span class="meta-nav">&raquo;</span>' ) ?></p>
-</div>
+
 <?php comments_template('', true); ?>
 </article>
 <?php get_sidebar(); ?>
