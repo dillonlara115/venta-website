@@ -48,7 +48,7 @@ Template Name: Home
 				<div class="img">
 					<img src="/wp-content/uploads/2015/06/web-design-service-icn-white-venta.png">
 				</div>
-				<h2>Web Design & Development</h2>
+				<h2><a href="<?php echo get_permalink( 73 ); ?>">Web Design & Development</a></h2>
 				<ul>
 					<li>Responsive Web Design</li>
 					<li>WordPress Web Design</li>

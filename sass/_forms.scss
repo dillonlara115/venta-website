@@ -1,7 +1,8 @@
 $small: em(960);
 
-// contact widget
-.contact-widget  {
+
+
+.contact-widget {
 	max-width: 300px;
 	padding:0 0 0 3em;
 	float: left;
@@ -9,8 +10,13 @@ $small: em(960);
 		width: 100%;
 		padding: .5em;
 	}
+}
+// contact widget
+.contact-widget, form  {
+
+
 	@include box-sizing(border-box);
-	.gform_wrapper .top_label input.medium, .gform_wrapper textarea.medium {
+	.gform_wrapper .top_label input.medium, .gform_wrapper textarea.medium, textarea, input {
 		background-color: rgba(238, 238, 238, 0.75);
 		border: 1px solid rgba(204, 204, 204, 0.3);
 		@include media(min-width $small) {
@@ -20,7 +26,7 @@ $small: em(960);
 		
 		width: 100%;
 	}
-	.gform_wrapper .gform_footer input.button, .gform_wrapper .gform_footer input[type=submit] {
+	.gform_wrapper .gform_footer input.button, .gform_wrapper .gform_footer input[type=submit], input[type=submit] {
 		border: 1px solid #669600;
 		background-color: #669600;
 		padding: .5em !important;
@@ -44,4 +50,13 @@ $small: em(960);
 		border: 0;
 		background: none;
 	}
+}
+
+
+
+
+.main-content form {
+    width: 100%;
+    max-width: none;
+    padding: 0 0 3em;
 }

@@ -21,26 +21,24 @@ Template Name: Denver Page
 <?php 
 
 $posts = get_posts(array(
-	'post_type'			=> 'portfolio'
-));
+			'showposts' => 8,
+			'post_type'			=> 'portfolio',
+		));
+
 
 if( $posts ): ?>
 	
 	<div class="portfolio denver-portfolio">
 		
-	<?php foreach( $posts as $post ): 
-		
-		setup_postdata( $post )
-		
-		?> 
-		<a href="<?php the_permalink(); ?>" class="portfolio-item">
-			<?php the_post_thumbnail( 'full' ); ?>
-			<div class="portfolio-content">
-				<h3><?php the_title(); ?></h3>
-				<p><?php the_field('tagline') ?></p>
+		<?php foreach( $posts as $post ): 
 				
-			</div>
-			<div class="background"></div>
+				setup_postdata( $post );
+				$logo = get_field('logo');
+				$whiteLogo = get_field('white_logo');
+				?>  
+		<a href="<?php the_permalink(); ?>" class="portfolio-item">
+			<?php the_post_thumbnail( 'full', array( 'class' => 'main-portfolio-image' )  ); ?>
+			<img src="<?php echo $logo['url']; ?>" alt="<?php echo $logo['alt']; ?>" class="color-logo"/>
 		</a>
 	
 	<?php endforeach; ?>
@@ -59,7 +57,7 @@ if( $posts ): ?>
 				<div class="img">
 					<img src="/wp-content/uploads/2015/06/web-design-service-icn-white-venta.png">
 				</div>
-				<h2>Web Design & Development</h2>
+				<h2><a href="<?php echo get_permalink( 73 ); ?>">Web Design & Development</a></h2>
 				<ul>
 					<li>Responsive Web Design</li>
 					<li>WordPress Web Design</li>

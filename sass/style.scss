@@ -78,11 +78,18 @@ article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{
 	font-weight: normal;
 	font-style: normal;
 }
+
 @font-face {
-	font-family: 'gist';
-	src:url('/wp-content/themes/venta-marketing/fonts/gist.otf');
-	font-weight: normal;
-	font-style: normal;
+    font-family: 'gist';
+    src: url('/wp-content/themes/venta-marketing/fonts/gist-webfont.eot');
+    src: url('/wp-content/themes/venta-marketing/fonts/gist-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/wp-content/themes/venta-marketing/fonts/gist-webfont.woff2') format('woff2'),
+         url('/wp-content/themes/venta-marketing/fonts/gist-webfont.woff') format('woff'),
+         url('/wp-content/themes/venta-marketing/fonts/gist-webfont.ttf') format('truetype'),
+         url('/wp-content/themes/venta-marketing/fonts/gist-webfont.svg#gist_rough_upr_exbold_two_dRg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
 }
 
 [class^="icon-"], [class*=" icon-"] {
@@ -254,9 +261,11 @@ $small: em(960);
 		}
 	}
 	@media (max-width: 48em) {
+		-webkit-flex: 2 50%;
 		flex: 2 50%;
 	}
 	@media (max-width: 480px) {
+		-webkit-flex: 1 100%;
 		flex: 1 100%;
 	}
 	
@@ -544,7 +553,7 @@ p.hp-cta a:hover {
 	padding: 0;
 	float: left;
 	border: 1px solid #fff;
-	background: #818285;
+	background: #818285;  
 }
 
 #hp-portfolio .img img {
@@ -568,7 +577,11 @@ p.hp-cta a:hover {
 		text-align: center;
 		margin: 20px 0 0;
 		padding-bottom: 5px;
-	}
+		a {
+			border: none;
+			padding: 0;
+		}
+	} 
 	.container {
 		padding: 60px 0;
 	}
@@ -685,7 +698,9 @@ h1.entry-title {
 	}
 }
 
-
+.entry-utility {
+	clear: both;
+}
 /* = Service Page
 ----------------------------------------------- */
 
