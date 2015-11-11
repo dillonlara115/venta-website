@@ -3,7 +3,7 @@
 <?php the_post(); ?>
 <?php $headerimage = get_field('header_image'); ?>
 	<div id="hp-header" class="hp-header hp-header-portfolio" style="background: url(<?php echo $headerimage['url']; ?>) no-repeat center center;background-size: cover;" >
-		<div class="container">
+		<div class="container test">
 			<div class="hp-headline portfolio-headline">
 				<?php the_title(); ?>
 			</div>
@@ -26,7 +26,7 @@
 			<h2>Services Provided</h2>
 			<?php
 
-			$field = get_field_object('services_provided'); 
+			$field = get_field_object('services_provided');
 			$colors = get_field('services_provided');
 
 			foreach($colors as $key => $val) {
@@ -38,7 +38,7 @@
 		</div>
 
 		<div class="portfolio-device-image">
-			<?php 
+			<?php
 
 			$image = get_field('device_image');
 
@@ -48,13 +48,13 @@
 
 			<?php endif; ?>
 		</div>
-		
+
 	<div class="portfolio-site cl-effect-18">
 		<a href="http://<?php the_field('project_url'); ?>" target="_blank"><span data-hover="Visit Site">Visit <strong>Site</strong></span></a>
 	</div>
-		
+
 	</div>
-	
+
 </div>
 
 <div style="clear:both;"></div>

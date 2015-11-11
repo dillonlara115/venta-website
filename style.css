@@ -392,7 +392,8 @@ img.logo {
     .header-top {
       position: absolute;
       display: inline-block;
-      padding: .5em; } }
+      padding: .5em;
+      height: 80px; } }
   @media screen and (min-width: 48em) {
     .header-top.sticky {
       background-color: rgba(0, 0, 0, 0.95) !important;
@@ -418,10 +419,11 @@ img.logo {
   position: absolute;
   right: .2em;
   top: 0;
-  font-size: 90px;
+  font-size: 50px;
   height: 50px;
   overflow: hidden;
-  color: #fff; }
+  color: #fff;
+  font-family: sans-serif; }
   @media screen and (min-width: 480px) {
     #simple-menu {
       top: .2em; } }

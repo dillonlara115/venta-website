@@ -1,8 +1,9 @@
 (function($){
-	$(document).ready(function() {
+	$( document ).ready(function() {
 	    $("#simple-menu").sidr({
 	        side: "right"
 	    });
+	    console.log( "custom ready!" );
 	});
 
 	var teamMember = $(".team-member");
@@ -26,5 +27,5 @@
 	  }
 	});
 
-
+console.log( "custom ready!" );
 })(jQuery);
